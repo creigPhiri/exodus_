@@ -17,12 +17,16 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', function(){
+    $user = DB::table('users')->get();
 
-Auth::routes();
+    return view('home',compact('user'));
+});
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('dash',redirect(route('dashboard.blade.php')));
+//
