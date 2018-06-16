@@ -23,6 +23,7 @@ Route::get('/home', function(){
     return view('home',compact('user'));
 });
 
+Route::get('/posts','PostsController@index');       //posts-> index
 
 
 //Route::get('dash',redirect(route('dashboard.blade.php')));
