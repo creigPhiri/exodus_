@@ -23,9 +23,6 @@ Route::get('/home', function(){
     return view('home',compact('user'));
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-});
 
 
 //Route::get('dash',redirect(route('dashboard.blade.php')));

@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    You are logged in {{ Auth::user()->name }}!
+                    Welcome back <strong class="text-capitalize"> {{ Auth::user()->name }}</strong>
 
                 </div>
             </div>
