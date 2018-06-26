@@ -17,14 +17,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', function(){
-    $user = DB::table('users')->get();
+Route::get('/index', 'PostsController@index');
 
-    return view('home',compact('user'));
-});
-
-Route::get('/posts','PostsController@index');       //posts-> index
-
+Route::post('/index','PostsController@store');
 
 //Route::get('dash',redirect(route('dashboard.blade.php')));
 //

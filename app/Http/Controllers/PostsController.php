@@ -23,7 +23,7 @@ class PostsController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -34,7 +34,12 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $post = new Post;
+        $post->post_body = request('post_body');
+        $post->user_name = request('user_name');
+        $post->save();
+
+        return redirect('/index');
     }
 
     /**

@@ -14,11 +14,11 @@ class CreatePostsTable extends Migration
     public function up()
     {
         Schema::create('posts', function (Blueprint $table) {
-            $table->increments('postID');
-            $table->string('userID');
-            $table->text('postBody');
-            $table->integer('likes');
-            $table->integer('numShares');
+            $table->increments('post_id');
+            $table->string('user_name');
+            $table->text('post_body');
+            $table->integer('likes')->default(null);
+            $table->integer('numShares')->default(null);
             $table->timestamps();
         });
     }

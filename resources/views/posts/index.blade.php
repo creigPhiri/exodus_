@@ -17,9 +17,10 @@
                             Welcome back <strong class="text-capitalize"> {{ Auth::user()->name }}</strong>
 
                         </div>
-                                <form method="post" action="/home">
+                                <form method="post" action="">
+                                          {{ csrf_field() }}
                                         <div class="mx-auto w-75">
-                                            <textarea class="form-control-lg w-100" name="postBody" id="postBody" placeholder="type here"></textarea>
+                                            <textarea class="form-control-lg w-100" name="post_body" id="post_body" placeholder="type here"></textarea>
                                         </div>
                                             <div class="row justify-content-center">
                                                     <div class="col-1">
@@ -31,7 +32,7 @@
                                                     </div>
                                             </div>
                                                 <div class="form-control d-none">
-                                                    <input type="text" name="userName" value="{{Auth::user()->name}}" hidden placeholder="share">
+                                                    <input type="text" name="user_name" value="{{Auth::user()->name}}" hidden placeholder="share">
                                                 </div>
                                         <div>
                                         <div class="text-center mt-2">
@@ -45,7 +46,7 @@
                         <div class="row justify-content-center mt-3">
                         <div class="card col-lg-6 d-block col-md-8 col-sm-10">
                             <div class="card-header">
-                                {{$datum->postBody}}
+                                {{$datum->post_body}}
                                 <br>
                                 <small class="text-muted">{{$datum->created_at}}</small>
                             </div>
