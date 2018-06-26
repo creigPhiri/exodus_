@@ -48,7 +48,7 @@
                             <div class="card-header">
                                 {{$datum->post_body}}
                                 <br>
-                                <small class="text-muted">{{$datum->created_at}}</small>
+                                <small class="text-muted">{{$datum->created_at->diffforhumans()}}</small>
                             </div>
                         </div>
                         </div>
