@@ -17,8 +17,8 @@ class CreatePostsTable extends Migration
             $table->increments('post_id');
             $table->string('user_name');
             $table->text('post_body');
-            $table->integer('likes')->default(null);
-            $table->integer('numShares')->default(null);
+            $table->integer('likes')->nullable();
+            $table->integer('numShares')->nullable();
             $table->timestamps();
         });
     }
