@@ -21,5 +21,6 @@ Route::get('/index', 'PostsController@index');
 
 Route::post('/index','PostsController@store');
 
+Route::post('comment','CommentController@store');
 //Route::get('dash',redirect(route('dashboard.blade.php')));
 //
