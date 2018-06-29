@@ -5,8 +5,12 @@ namespace App\Http\Controllers;
 use App\Comment;
 use Illuminate\Http\Request;
 
-class CommentController extends Controller
+class CommentsController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -33,9 +37,12 @@ class CommentController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store()
+    public function store(Request $request)
     {
+        $request->validate(['comment_body'=>'required']);
+
         $comment = new Comment;
+        $comment->user_id = \Auth::id();
         $comment->post_id = request('post_id');
         $comment->comment_body = request('comment_body');
         $comment->save();

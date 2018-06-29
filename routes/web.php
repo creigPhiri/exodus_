@@ -17,10 +17,11 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/index', 'PostsController@index');
+Route::get('/index', 'PostsController@index')->name('home');
 
 Route::post('/index','PostsController@store');
 
-Route::post('comment','CommentController@store');
+Route::post('comment','CommentsController@store');
 //Route::get('dash',redirect(route('dashboard.blade.php')));
 //
+Route::get('logout','Auth\LoginController@destroy');

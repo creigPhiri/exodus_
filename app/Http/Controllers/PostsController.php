@@ -7,11 +7,15 @@ use App\Post;
 
 class PostsController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
     public function index()
         //shows all the Posts
     {
-        $posts = Post::all();
+        $posts = Post::latest()->get();
         return view('posts.index',compact('posts'));
 
     }
@@ -34,9 +38,10 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate(['post_body'=>'required|max:255']);
         $post = new Post;
         $post->post_body = request('post_body');
-        $post->user_name = request('user_name');
+        $post->user_id = \Auth::id();
         $post->save();
 
         return redirect('/index');

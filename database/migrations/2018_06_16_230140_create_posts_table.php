@@ -15,7 +15,7 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->increments('post_id');
-            $table->string('user_name');
+            $table->string('user_id');
             $table->text('post_body');
             $table->integer('likes')->nullable();
             $table->integer('numShares')->nullable();
