@@ -1,9 +1,13 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="container">
+<div class="">
         <div class="row justify-content-center">
-                <div class="col-md-8">
+                <aside class="col-md-3 col-lg-3 col-sm-10 text-left">
+                    <h4 class="text-center">profile menu</h4>
+                </aside>
+
+                <section class="col-md-6 col-lg-6 col-sm-10">
                     <div class="card">
                         <div class="card-header">Dashboard</div>
 
@@ -20,15 +24,6 @@
                                             <div class="mx-auto w-75">
                                                   <textarea class="form-control-lg w-100" required name="post_body" id="post_body" placeholder="type here"></textarea>
                                             </div>
-                                                    <div class="row justify-content-center">
-                                                            <div class="col-1">
-                                                                     <input type="button" name="share" class="btn btn-success" id="share" placeholder="share">
-                                                             </div>
-                                                                 <div class="col-1">
-                                                                       <input type="button" name="like" class="btn btn-primary" id="like" placeholder="like">
-                                                                 </div>
-                                                    </div>
-
                                                     <div>
                                                             <div class="text-center mt-1">
                                                                 <input type="submit" class="w-25 text-center btn btn-success btn-lg">
@@ -36,13 +31,18 @@
                                                     </div>
                                       </form>
                             @foreach($posts as $post)
-                                    @include('cards.post_card')
-                                    @include('cards.comment_card')
-                                    @include('layouts.comment_form')    {{--loads the comment form--}}
+                                    @include('display_cards.post_card')
+                                    @include('display_cards.comment_card')
+                                    @include('input_cards.comment_form')    {{--loads the comment form--}}
                               @endforeach
 
                     </div>
-                </div>
+                </section>
+            <aside class="col-md-3 blog-sidebar col-lg-3 d-sm-block d-none text-right">
+                    @include('display_cards.archives')
+            </aside><!-- /.blog-sidebar -->
+
+
         </div>
 </div>
 @endsection

@@ -16,6 +16,10 @@ class PostsController extends Controller
         //shows all the Posts
     {
         $posts = Post::latest()->get();
+        if ($month = request('month'))
+        {
+
+        }
         return view('posts.index',compact('posts'));
 
     }

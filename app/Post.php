@@ -11,7 +11,7 @@ class Post extends Model
     public function comments()
     //sets the relationship for the post to many comments
     {
-        return $this->hasMany(Comment::class,'post_id');
+        return $this->hasMany(Comment::class,'post_id')->latest();
     }
     public function users(){
         return $this->belongsTo(User::class,'user_id');

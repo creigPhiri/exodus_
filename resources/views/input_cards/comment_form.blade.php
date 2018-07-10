@@ -1,6 +1,6 @@
         <!--this form lets the user make a comment-->
 
-<form action="comment" method="post" class="m-5 w-75 form-group">
+<form action="comment" method="post" class="m-3 w-75 form-group">
        {{csrf_field()}}
 
             <input type="text" name="post_id" value="{{$post->post_id}}" class="d-none">

@@ -23,7 +23,7 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
+    <div id="app" class="container">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -72,7 +72,7 @@
             </div>
         </nav>
 
-        @include('layouts.errors')
+        @include('display_cards.errors')
         <main class="py-4">
             @yield('content')
         </main>
