@@ -22,12 +22,12 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
-<body>
-    <div id="app" class="container">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
-            <div class="container">
+<body class="bg-light">
+    <div id="app" class="container bg-white">
+<nav class="navbar navbar-expand-md navbar-light border-bottom shadow-lg">
+        <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'People\'s voice') }}
+                    {{ config('app.name', 'Zim voice') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -44,8 +44,6 @@
                         <!-- Authentication Links -->
                         @guest
 
-                                                      {{--links below have been commented out as the login and sign in is now on one page--}}
-
                             <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
                             <li><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>
                         @else
@@ -55,6 +53,7 @@
                                 </a>
 
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a href="#" class="dropdown-item">Settings</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

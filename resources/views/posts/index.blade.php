@@ -3,11 +3,42 @@
 @section('content')
 <div class="">
         <div class="row justify-content-center">
-                <aside class="col-md-3 col-lg-3 col-sm-10 text-left">
-                    <h4 class="text-center">profile menu</h4>
-                </aside>
+                <nav class="col-md-3 d-none d-md-block sidebar">
+                    <div class="sidebar-sticky">
+                         <div class="card-body">
+                            <img src="{{asset('images/default_profile.png')}}" class="img-responsive card-img" alt="profile pic">
+                         </div>
+                            <ul class="nav flex-column text-center">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">
+                                        <span data-feather="home"></span>
+                                        Profile <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <span data-feather="file"></span>
+                                        About
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <span data-feather="shopping-cart"></span>
+                                        Followers
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <span data-feather="users"></span>
+                                        Settings
+                                    </a>
+                                </li>
+                            </ul>
 
-                <section class="col-md-6 col-lg-6 col-sm-10">
+                    </div>
+                </nav>
+
+                <section class="col-md-6 col-lg-6 col-sm-10 ">
                     <div class="card">
                         <div class="card-header">Dashboard</div>
 
@@ -22,13 +53,10 @@
                                     <form method="post" action="" class="mb-3">
                                       {{ csrf_field() }}
                                             <div class="mx-auto w-75">
-                                                  <textarea class="form-control-lg w-100" required name="post_body" id="post_body" placeholder="type here"></textarea>
+                                                  <textarea class="form-control" required name="post_body" id="post_body" placeholder="type here"></textarea>
+                                                  <input type="submit" class="form-control btn btn-primary">
+
                                             </div>
-                                                    <div>
-                                                            <div class="text-center mt-1">
-                                                                <input type="submit" class="w-25 text-center btn btn-success btn-lg">
-                                                            </div>
-                                                    </div>
                                       </form>
                             @foreach($posts as $post)
                                     @include('display_cards.post_card')
@@ -38,7 +66,7 @@
 
                     </div>
                 </section>
-            <aside class="col-md-3 blog-sidebar col-lg-3 d-sm-block d-none text-right">
+            <aside class="col-md-3 sidebar col-lg-3 d-sm-block d-none text-center">
                     @include('display_cards.archives')
             </aside><!-- /.blog-sidebar -->
 
