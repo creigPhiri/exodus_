@@ -9,7 +9,7 @@ $username = $url["user"] ?? null;
 $password = $url["pass"] ?? null;
 $db = substr($url["path"] , 1)?? null;
 
-$conn = new mysqli($server, $username, $password, $db);
+    $conn = new mysqli($server, $username, $password, $db);
 
 //**************************************
 

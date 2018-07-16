@@ -19,12 +19,12 @@ class PostsController extends Controller
         $posts = Post::latest();
         if ($month = request('month'))
         {
-            $posts::whereMonth('created_at',Carbon::parse($month));
+            $posts->whereMonth('created_at',Carbon::parse($month)->month);
         }
 
         if($year = request('year'))
         {
-            $posts::whereYear('created_at',Carbon::parse($year));
+            $posts->whereYear('created_at',Carbon::parse($year));
         }
         $posts = $posts->get();
 
