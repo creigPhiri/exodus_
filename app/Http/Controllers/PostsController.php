@@ -105,8 +105,21 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy()
     {
-        //
+        $id = \request('id');
+        if($post = Post::find($id)) {
+            if (\Auth::id() == $post->user_id) {
+                $post->delete();
+                dd('post deleted');
+            }
+            else{
+                dd('you do not the required privilege');
+            }
+        }
+        else{
+            dd('post id not found');
+        }
+
     }
 }
