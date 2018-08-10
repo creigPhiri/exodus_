@@ -19,7 +19,7 @@ Auth::routes();
 
 Route::get('/index', 'PostsController@index')->name('home');
 
-Route::get('posts/{id}','PostsController@index');
+//Route::get('posts/{id}','PostsController@index');         ****merely repeats the route above
 
 Route::post('/index','PostsController@store');
 
@@ -27,3 +27,5 @@ Route::post('comment','CommentsController@store');
 //Route::get('dash',redirect(route('dashboard.blade.php')));
 //
 Route::get('logout','Auth\LoginController@destroy');
+
+Route::get('delete','PostsController@destroy');
