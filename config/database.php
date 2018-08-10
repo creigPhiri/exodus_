@@ -1,5 +1,18 @@
 <?php
 
+//heroku database connection settings
+
+$url = parse_url(getenv("CLEARDB_GOLD_URL"));
+
+$server = $url["host"] ?? null;
+$username = $url["user"] ?? null;
+$password = $url["pass"] ?? null;
+$db = substr($url["path"] , 1)?? null;
+
+    $conn = new mysqli($server, $username, $password, $db);
+
+//**************************************
+
 return [
 
     /*
@@ -13,7 +26,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'mysql_testing'),
 
     /*
     |--------------------------------------------------------------------------
@@ -53,6 +66,25 @@ return [
             'strict' => true,
             'engine' => null,
         ],
+
+    //heroku testing connection
+
+        'mysql_testing' => [
+            'driver' => 'mysql',
+            'host' => $server,
+            'port' => env('DB_PORT', '3306'),
+            'database' => $db,
+            'username' => $username,
+            'password' => $password,
+            'unix_socket' => env('DB_SOCKET', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'strict' => true,
+            'engine' => null,
+        ],
+
+    //**********************************
 
         'pgsql' => [
             'driver' => 'pgsql',
