@@ -28,3 +28,5 @@ Route::post('comment','CommentsController@store');
 Route::get('logout','Auth\LoginController@destroy');
 
 Route::get('delete','PostsController@destroy');
+
+Route::get('update','PostsController@update');

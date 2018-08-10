@@ -48,13 +48,10 @@ class PostsController extends Controller
 
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+
     public function store(Request $request)
+        #used to create and store a new post
+        #Request obj passes the post infor and userID which is taken from the Authenticated user
     {
         $request->validate(['post_body'=>'required|max:255']);
         $post = new Post;
@@ -87,16 +84,12 @@ class PostsController extends Controller
         //
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
+
+    public function update(Request $request, $id='')
+        #used to update the the post.
+        #validation first done to confirm user has permission to update
     {
-        //
+        dd(Post::find($request->id));
     }
 
     /**
