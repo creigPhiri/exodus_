@@ -111,15 +111,16 @@ class PostsController extends Controller
         if($post = Post::find($id)) {
             if (\Auth::id() == $post->user_id) {
                 $post->delete();
-                dd('post deleted');
+               // dd('post deleted');
             }
             else{
-                dd('you do not the required privilege');
+                //dd('you do not the required privilege');
             }
         }
         else{
-            dd('post id not found');
+                //  dd('post id not found');
         }
+       return redirect('index');
 
     }
 }
