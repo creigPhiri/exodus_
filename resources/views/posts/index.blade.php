@@ -42,28 +42,27 @@
                     <div class="card">
                         <div class="card-header">Dashboard</div>
 
-                                <div class="card-body">
-                                        @if (session('status'))
-                                            <div class="alert alert-success">
-                                                {{ session('status') }}
-                                            </div>
-                                        @endif
-                                        Welcome back <strong class="text-capitalize"> {{ Auth::user()->name }}</strong>
+                        <div class="card-body">
+                             @if (session('status'))
+                                 <div class="alert alert-success">
+                                   {{ session('status') }}
                                 </div>
-                                    <form method="post" action="" class="mb-3">
-                                      {{ csrf_field() }}
-                                            <div class="mx-auto w-75">
-                                                  <textarea class="form-control" required name="post_body" id="post_body" placeholder="type here"></textarea>
-                                                  <input type="submit" class="form-control btn btn-primary">
-
-                                            </div>
-                                      </form>
+                             @endif
+                               Welcome back
+                                 <strong class="text-capitalize"> {{ Auth::user()->name }} </strong>
+                        </div>
+                        <form method="post" action="" class="mb-3">
+                            {{ csrf_field() }}
+                              <div class="mx-auto w-75">
+                                <textarea class="form-control" required name="post_body" id="post_body" placeholder="type here"></textarea>
+                                  <input type="submit" class="form-control btn btn-primary">
+                              </div>
+                        </form>
                             @foreach($posts as $post)
-                                    @include('display_cards.post_card')
-                                    @include('display_cards.comment_card')
-                                    @include('input_cards.comment_form')    {{--loads the comment form--}}
-                              @endforeach
-
+                                @include('display_cards.post_card')
+                                {{--@include('input_cards.comment_form')--}}             <!--moved to post card-->
+                                 {{--@include('display_cards.comment_card')      --}}   <!--moved to post card-->
+                            @endforeach
                     </div>
                 </section>
             <aside class="col-md-3 sidebar col-lg-3 d-sm-block d-none text-center">
