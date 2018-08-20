@@ -3,25 +3,20 @@
 -->
 
 
+
 <div class="row border border-primary w-75 rounded mx-auto mb-3">
-    <div class="col-12">
-        <div class="row">
-             <div class="col-3 border border-dark">
-                 <img src="#" alt="profile pic" class="img-responsive img-circle ">
-             </div>
-             <div class="col-6 text-center">
-                {{$post->post_body}}
-             </div>
-        </div>
-    </div>
     <div class="col-12">
         @if(Auth::check())
         <div class="row">
-                <div class="col-6 text-left">
-                     <a href="#" class="active">{{'@'.$post->users->name}}</a>
-                        <small class="text-muted">{{$post->created_at->diffforhumans()}}</small>
-                </div>
-                <div class="col text-right ">
+            <div class="media text-muted pt-3">
+                <img data-src="holder.js/32x32?theme=thumb&bg=e83e8c&fg=e83e8c&size=1" alt="" class="mr-2 rounded">
+                <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                    <strong class="d-block"><a href="#" class="active">{{'@'.$post->users->name}}</a></strong>
+                    <strong>{{$post->post_body}}</strong>
+                    <small class="text-muted mr-2">{{$post->created_at->diffforhumans()}}</small>
+                </p>
+            </div>
+                <div class="col-12 text-right ">
                     @if(Auth::id()==$post->user_id)
                         <a class="btn btn-link text-success "
                           href="update?id={{$post->post_id}}"><i class="fas fa-pencil-alt"></i></a>
@@ -38,7 +33,7 @@
                 @include('input_cards.comment_form')
         </div>
             <div class="row">
-                <div class="col text-center">
+                <div class="col ml-5">
                     @include('display_cards.comment_card')
                 </div>
             </div>

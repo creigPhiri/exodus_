@@ -40,7 +40,7 @@
 
                 <section class="col-md-6 col-lg-6 col-sm-10 ">
                     <div class="card">
-                        <div class="card-header">Dashboard</div>
+                        <div class="card-header bg-primary text-white text-center h3">Timeline</div>
 
                         <div class="card-body">
                              @if (session('status'))
