@@ -9,7 +9,7 @@ class Comment extends Model
     protected $primaryKey = 'comment_id';
 
     public function posts(){
-        return $this->belongsTo(Post::class,'post_id');
+        return $this->belongsTo(Post::class);
     }
 
     public function users(){
