@@ -19,15 +19,15 @@
                 <div class="col-12 text-right ">
                     @if(Auth::id()==$post->user_id)
                         <a class="btn btn-link text-success "
-                          href="update?id={{$post->post_id}}"><i class="fas fa-pencil-alt"></i></a>
+                          href="update?id={{$post->id}}"><i class="fas fa-pencil-alt"></i></a>
                            <a class="btn btn-link text-danger"
-                             href="delete?id={{$post->post_id}}">
+                             href="delete?id={{$post->id}}">
                               <i class="fas fa-trash-alt"></i>
                            </a>
                     @endif
                     <!-- this is visible regardless of poster-id-->
                     <a class="btn btn-link text-primary" data-toggle="collapse"
-                       href="#comment_{{$post->post_id}}" role="button" aria-expanded="false" aria-controls="comment"><i class="far fa-comment"></i>
+                       href="#comment_{{$post->id}}" role="button" aria-expanded="false" aria-controls="comment"><i class="far fa-comment"></i>
                     </a>
                 </div>
                 @include('input_cards.comment_form')
