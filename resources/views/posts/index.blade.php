@@ -5,8 +5,10 @@
         <div class="row justify-content-center">
                 <nav class="col-md-3 d-none d-md-block sidebar">
                     <div class="sidebar-sticky">
-                         <div class="card-body">
-                            <img src="{{asset('images/default_profile.png')}}" class="img-responsive card-img" alt="profile pic">
+                         <div class="row">
+                             <div class="mx-auto col-6">
+                                 <img src="{{asset('images/default_profile.png')}}" class="img-responsive card-img" alt="profile pic">
+                             </div>
                          </div>
                             <ul class="nav flex-column text-center">
                                 <li class="nav-item">
