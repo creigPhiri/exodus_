@@ -1,5 +1,5 @@
         <!--this form lets the user make a comment-->
-<div class="collapse ml-auto" id="comment_{{$post->post_id}}">
+<div class="collapse ml-auto" id="comment_{{$post->id}}">
     <form action="comment" method="post" class=" form-inline">
         {{csrf_field()}}
           <div class="form-group bg-white">
