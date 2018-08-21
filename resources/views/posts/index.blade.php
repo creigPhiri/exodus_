@@ -60,13 +60,11 @@
                         </form>
                             @foreach($posts as $post)
                                 @include('display_cards.post_card')
-                                {{--@include('input_cards.comment_form')--}}             <!--moved to post card-->
-                                 {{--@include('display_cards.comment_card')      --}}   <!--moved to post card-->
                             @endforeach
                     </div>
                 </section>
             <aside class="col-md-3 sidebar col-lg-3 d-sm-block d-none text-center">
-                    @include('display_cards.archives')
+                    @include('display_cards.sideBar')
             </aside><!-- /.blog-sidebar -->
 
 

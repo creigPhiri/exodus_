@@ -15,6 +15,7 @@ class PostsController extends Controller
 
     public function index()
         //shows all the Posts
+        //passes the archives and trending logic to sideBar.blade which is implemented on index page
     {
         $posts = Post::latest();
         if ($month = request('month'))
@@ -34,7 +35,8 @@ class PostsController extends Controller
                     ->orderByRaw('min(created_at)','desc')
                     ->get()
                     ->toArray();
-        return view('posts.index',compact('posts','archives'));
+        $tags =\App\Tag::has('posts')->pluck('name');
+        return view('posts.index',compact(['posts','archives','tags']));
 
     }
 
@@ -62,23 +64,13 @@ class PostsController extends Controller
         return redirect('/index');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function show($id)
     {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function edit($id)
     {
         //
@@ -92,13 +84,10 @@ class PostsController extends Controller
         dd(Post::find($request->id));
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function destroy()
+        //param: post_id
+        //action: deletes the post
     {
         $id = \request('id');
         if($post = Post::find($id)) {
