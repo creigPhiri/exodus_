@@ -30,3 +30,5 @@ Route::get('logout','Auth\LoginController@destroy');
 Route::get('delete','PostsController@destroy');
 
 Route::get('update','PostsController@update');
+
+Route::get('users','UsersController@showAll');

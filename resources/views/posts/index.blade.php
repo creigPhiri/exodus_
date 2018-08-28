@@ -7,7 +7,7 @@
                     <div class="sidebar-sticky">
                          <div class="row">
                              <div class="mx-auto col-6">
-                                 <img src="{{asset('images/default_profile.png')}}" class="img-responsive card-img" alt="profile pic">
+                                 <img src="{{asset('images/default.png')}}" class="img-responsive card-img img-rounded" alt="profile pic">
                              </div>
                          </div>
                             <ul class="nav flex-column text-center">
@@ -19,14 +19,14 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">
-                                        <span data-feather="file"></span>
-                                        About
+                                        <span data-feather="shopping-cart"></span>
+                                        Followers
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">
-                                        <span data-feather="shopping-cart"></span>
-                                        Followers
+                                        <span data-feather="users"></span>
+                                        Following
                                     </a>
                                 </li>
                                 <li class="nav-item">
