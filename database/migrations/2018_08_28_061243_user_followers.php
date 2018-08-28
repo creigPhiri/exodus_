@@ -14,10 +14,12 @@ class UserFollowers extends Migration
     public function up()
     {
         Schema::create('user_followers', function (Blueprint $table) {
-            $table->integer('follower_id');
+            //$table->increments('id');
             $table->integer('user_id');
+            $table->integer('follower_id');
             $table->timestamps();
-            $table->primary(['follower_id','user_id']);
+            $table->primary(['user_id','follower_id']);
+            //$table->foreign('follower_id')->references('user_id')->on('users');
         });
     }
 
