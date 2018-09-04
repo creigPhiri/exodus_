@@ -7,16 +7,12 @@
 
     }
 
-    #area-dark {
-        border:50px solid rgba(0,0,0,0.5);
-        background-clip: padding-box;
-        background-color: rgba(255,255,255,1);
-
-    }
     #main {
         background: url("{{asset('images/flag.jpg')}}") 0 0/cover;background-repeat: no-repeat; min-height: 400px;
 
     }
+
+
 </style>
 @section('content')
     <div id='main' style='' class="row">
@@ -24,7 +20,7 @@
             <div class="card-image">
                 <img src="" alt="img area">
             </div>
-            <div class="card-header p-2"><a href="#" class="active h5 text-primary">@fortune</a>
+            <div class="card-header p-2"><a href="/user/{{$user->user_id}}" class="active h5 text-primary">{{'@'.$user->name}}</a>
                 <button class="btn btn-primary col-10 text-center">Follow</button>
             </div>
             <div class="card-body">
@@ -36,6 +32,14 @@
 
         </div>       <!--  need to remove and float this right-->
         <div class="col card" id =area-white>
+            <h1 class="text-primary">{{$user->name . '\'s account'}}</h1>
+            <br>
+            <h1>Interests</h1>
+            <a>political science</a>
+            <a>other ish</a>
+            <h1>Recent activity</h1>
+            <a>political science</a>
+            <a>other ish</a>
 
 
         </div>

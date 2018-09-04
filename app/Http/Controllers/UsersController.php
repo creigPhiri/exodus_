@@ -13,9 +13,9 @@ class UsersController extends Controller
         return view('Users.users',compact('users'));
     }
 
-    public function viewProfile(Request $request)
+    public function viewProfile(User $user)
     {
-        return view('users.user_profile');
+        return view('users.user_profile',compact('user'));
     }
 
 }

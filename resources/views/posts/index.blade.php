@@ -12,7 +12,7 @@
                          </div>
                             <ul class="nav flex-column text-center">
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="#">
+                                    <a class="nav-link active" href="user/{{auth()->id()}}">
                                         <span data-feather="home"></span>
                                         Profile <span class="sr-only">(current)</span>
                                     </a>
