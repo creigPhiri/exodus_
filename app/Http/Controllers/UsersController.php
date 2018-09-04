@@ -10,7 +10,7 @@ class UsersController extends Controller
     //shows all the users in the database
     {
         $users = User::all();
-        return view('Users.users',compact('users'));
+        return view('users.users',compact('users'));
     }
 
     public function viewProfile(User $user)
