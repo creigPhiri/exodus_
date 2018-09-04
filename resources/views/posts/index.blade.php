@@ -43,33 +43,30 @@
                 <section class="col-md-6 col-lg-6 col-sm-10 ">
                     <div class="card">
                         <div class="card-header bg-primary text-white text-center h3">Timeline</div>
-
-                        <div class="card-body">
-                             @if (session('status'))
-                                 <div class="alert alert-success">
-                                   {{ session('status') }}
+                         <div class="card-body">
+                            @if (session('status'))
+                                <div class="alert alert-success">
+                                  {{ session('status') }}
                                 </div>
-                             @endif
-                               Welcome back
-                                 <strong class="text-capitalize"> {{ Auth::user()->name }} </strong>
-                        </div>
-                        <form method="post" action="" class="mb-3">
+                            @endif
+                            Welcome back
+                            <strong class="text-capitalize"> {{ Auth::user()->name }} </strong>
+                         </div>
+                         <form method="post" action="" class="mb-3">
                             {{ csrf_field() }}
-                              <div class="mx-auto w-75">
-                                <textarea class="form-control" required name="post_body" id="post_body" placeholder="type here"></textarea>
-                                  <input type="submit" class="form-control btn btn-primary">
-                              </div>
-                        </form>
-                            @foreach($posts as $post)
-                                @include('display_cards.post_card')
-                            @endforeach
+                            <div class="mx-auto w-75">
+                               <textarea class="form-control" required name="post_body" id="post_body" placeholder="type here"></textarea>
+                                 <input type="submit" class="form-control btn btn-primary">
+                            </div>
+                         </form>
+                        @foreach($posts as $post)
+                            @include('display_cards.post_card')
+                        @endforeach
                     </div>
                 </section>
-            <aside class="col-md-3 sidebar col-lg-3 d-sm-block d-none text-center">
-                    @include('display_cards.sideBar')
-            </aside><!-- /.blog-sidebar -->
-
-
+                <aside class="col-md-3 sidebar col-lg-3 d-sm-block d-none text-center">
+                        @include('display_cards.sideBar')
+                </aside><!-- /.blog-sidebar -->
         </div>
 </div>
 @endsection

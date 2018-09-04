@@ -14,7 +14,7 @@ this file contains the object for displaying the post. area commented out to all
                 <!-- comment comment -->
                 <div class="col-9 ml-0 mt-2" style="border:3px solid #eee;box-shadow :0 2px 3px #ccc;">
                      <p class="media-body pb-3 mb-0 lh-125 border-bottom border-gray">
-                        <a href="#" class="active font-weight-bold">{{'@'.$post->users->name}}</a>
+                        <a href="user/{{$post->user_id}}" class="active font-weight-bold">{{'@'.$post->users->name}}</a>
                            <strong>{{$post->post_body}}</strong>
                               @if(Auth::id()==$post->user_id)
                                 {{--<a class="btn btn-link text-success " href="update?id={{$post->id}}"><i class="fas fa-pencil-alt"></i></a>--}}
