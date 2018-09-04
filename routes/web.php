@@ -17,18 +17,16 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/index', 'PostsController@index')->name('home');
+Route::get('/index', 'PostsController@index')->name('home');        //directs to home
 
-//Route::get('posts/{id}','PostsController@index');         ****merely repeats the route above
+Route::post('/index','PostsController@store');                      //used to store new post
 
-Route::post('/index','PostsController@store');
+Route::post('comment','CommentsController@store');                  //used to store new comment
 
-Route::post('comment','CommentsController@store');
+Route::get('logout','Auth\LoginController@destroy');                //destroy session (logout)
 
-Route::get('logout','Auth\LoginController@destroy');
+Route::get('delete','PostsController@destroy');                     //deletes the selected post
 
-Route::get('delete','PostsController@destroy');
+Route::get('update','PostsController@update');                      //used to update a post
 
-Route::get('update','PostsController@update');
-
-Route::get('users','UsersController@showAll');
+Route::get('user','UsersController@viewProfile');            //redirects to the relevant profile page
