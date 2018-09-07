@@ -14,10 +14,10 @@
 </style>
 @section('content')
     <div id='main' style='' class="row">
-        <div class="col-4 card " id =area-white>
+        <div class="col-lg-4  col-md-5 card " id =area-white>
             <div class="card-image"><img src="" alt="img area"></div>
             <div class="card-header p-2"><a href="/user/{{$user->user_id}}" class="active h5 text-primary">{{'@'.$user->name}}</a>
-               <button class="btn btn-primary col-10 text-center">Follow</button>
+               <a href="/follow?follower_id={{auth()->id()}}&followee_id={{$user->user_id}}" class="btn btn-primary col-10 text-center">Follow</a>
             </div>
             <div class="card-body">
                  <a href="#" class="active d-block">followers(26)</a>

@@ -30,3 +30,5 @@ Route::get('delete','PostsController@destroy');                     //deletes th
 Route::get('update','PostsController@update');                      //used to update a post
 
 Route::get('user/{user}','UsersController@viewProfile');            //redirects to the relevant profile page
+
+Route::get('follow','UsersController@follow');
