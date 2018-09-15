@@ -34,11 +34,11 @@ class UsersController extends Controller
 
         #start of function
 
-            if($follower =User::findOrFail($follower_id)){
+            if($follower =User::find($follower_id)){
                 $follower = $follower->userFollowers()->firstOrCreate(['follower_id'=>$follower_id,'followee_id'=>$followee_id],['follower_id'=>$follower_id,'followee_id'=>$followee_id]);
             };
 
-            return redirect('/user/'.$followee_id);
+            return redirect('/user/'.$followee_id)->with($followee_id);
 
 
 
@@ -46,7 +46,9 @@ class UsersController extends Controller
 
     public function unfollow(Request $request)
         {
-
+            $delete = UserFollower::where('follower_id',request('follower_id'))->where('followee_id',request('followee_id'));
+            $delete->delete();
+            return redirect('user/'.$request->followee_id);
         }
 
 

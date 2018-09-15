@@ -29,8 +29,8 @@ function relationshipExists($follower_id, $followee_id)
         App\UserFollower::where('follower_id',$follower_id)->where('followee_id',$followee_id)->get();
         if(!count(App\UserFollower::where('follower_id',$follower_id)->where('followee_id',$followee_id)->get()))
         {
-            return $button ='<a class="btn btn-primary" href="#follow">Follow</a>';
+            return $button = ['type'=> 'follow'];
         }
-        return   $button = '<a class="btn btn-primary" href="#unfollow">Unfollow</a>';
+        return   $button = ['type'=> 'unfollow'];
 
     }

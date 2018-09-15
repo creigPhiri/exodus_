@@ -20,8 +20,7 @@
         <div class="col-lg-4  col-md-5 card " id =area-white>
             <div class="card-image"><img src="" alt="img area"></div>
             <div class="card-header p-2"><a href="/user/{{$user->user_id}}?follower_id={{auth()->id()}}" class="active h5 text-primary">{{'@'.$user->name}}</a>
-                    {{--<a href="/follow?follower_id={{auth()->id()}}&followee_id={{$user->user_id}}" class="btn btn-primary col-10 text-center">Follow</a>--}}
-                    <?php echo($button)?>
+                    <a href="/{{$button['type']}}?follower_id={{auth()->id()}}&followee_id={{$user->user_id}}" class="btn btn-primary col-10 text-center">{{$button['type']}}</a>
                 <input class="d-none" name="follower_id" value="{{auth()->id()}}">
         </div>
             <div class="card-body">

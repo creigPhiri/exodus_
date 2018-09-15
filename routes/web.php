@@ -33,4 +33,4 @@ Route::get('user/{user}','UsersController@viewProfile');            //redirects 
 
 Route::get('follow','UsersController@follow');
 
-Route::get('test','UsersController@showAll');
+Route::get('unfollow','UsersController@unfollow');
