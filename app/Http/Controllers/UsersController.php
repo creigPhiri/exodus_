@@ -8,31 +8,46 @@ use App\User;
 class UsersController extends Controller
 {
     public function showAll()
-    //shows all the users in the database
-    {
-        $users = User::all();
-        return view('users.users',compact('users'));
-    }
+        //shows all the users in the database
+        {
+            $users = User::all();
+            return view('users.users',compact('users'));
+        }
 
     public function viewProfile(User $user)
-    {
-        $is_friend = null;
-        return view('users.user_profile',compact('user'));
-    }
+        {
+
+            $button =buttonType(request('follower_id'),$user->user_id);
+            return view('users.user_profile',compact(['user','button']));
+        }
 
     public function follow(Request $request)
-    {
-        $follow = new UserFollower;
-        $follow->follower_id = request('follower_id');
-        $follow->followee_id = request('followee_id');
-        $follow->save();
-        return back();
-    }
+        {
+            $follower_id = request('follower_id');
+            $followee_id = request('followee_id');
 
-    public function unfollow()
-    {
+            #commented out to allow for new function that only creates on condition that record doesnt already exist
+            //                    $follow = new UserFollower;
+            //                    $follow->follower_id = $follower_id;
+            //                    $follow->followee_id = $followee_id;
+            //                    $follow->save();
 
-    }
+        #start of function
+
+            if($follower =User::findOrFail($follower_id)){
+                $follower = $follower->userFollowers()->firstOrCreate(['follower_id'=>$follower_id,'followee_id'=>$followee_id],['follower_id'=>$follower_id,'followee_id'=>$followee_id]);
+            };
+
+            return redirect('/user/'.$followee_id);
+
+
+
+        }
+
+    public function unfollow(Request $request)
+        {
+
+        }
 
 
 }

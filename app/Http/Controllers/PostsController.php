@@ -6,6 +6,7 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Post;
 
+
 class PostsController extends Controller
 {
     public function __construct()
@@ -36,6 +37,7 @@ class PostsController extends Controller
                     ->get()
                     ->toArray();
         $tags =\App\Tag::has('posts')->pluck('name');
+
         return view('posts.index',compact(['posts','archives','tags']));
 
     }

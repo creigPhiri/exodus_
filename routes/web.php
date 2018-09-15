@@ -32,3 +32,5 @@ Route::get('update','PostsController@update');                      //used to up
 Route::get('user/{user}','UsersController@viewProfile');            //redirects to the relevant profile page
 
 Route::get('follow','UsersController@follow');
+
+Route::get('test','UsersController@showAll');
