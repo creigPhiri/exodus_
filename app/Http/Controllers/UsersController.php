@@ -26,21 +26,19 @@ class UsersController extends Controller
             $follower_id = request('follower_id');
             $followee_id = request('followee_id');
 
-            #commented out to allow for new function that only creates on condition that record doesnt already exist
-            //                    $follow = new UserFollower;
-            //                    $follow->follower_id = $follower_id;
-            //                    $follow->followee_id = $followee_id;
-            //                    $follow->save();
-
         #start of function
 
             if($follower =User::find($follower_id)){
                 $follower = $follower->userFollowers()->firstOrCreate(['follower_id'=>$follower_id,'followee_id'=>$followee_id],['follower_id'=>$follower_id,'followee_id'=>$followee_id]);
             };
 
-            return redirect('/user/'.$followee_id)->with($followee_id);
+            return back();
 
-
+            #commented out to allow for new function that only creates on condition that record doesnt already exist
+            //                    $follow = new UserFollower;
+            //                    $follow->follower_id = $follower_id;
+            //                    $follow->followee_id = $followee_id;
+            //                    $follow->save();
 
         }
 
@@ -51,5 +49,7 @@ class UsersController extends Controller
             return redirect('user/'.$request->followee_id);
         }
 
-
+    public function test(){
+        return view('test_folder.profile');
+    }
 }
