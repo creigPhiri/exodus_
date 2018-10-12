@@ -116,7 +116,8 @@
 
     <!-- details card section starts from here -->
 <div class="container  ">
-    <h2 class="text-center mb-3">Trending now</h2>
+    @include('layouts.nav')
+    <h2 class="text-center m-3">Trending now</h2>
     <div class="row">
         <div class="col-md-4">
             <div class="card-content">
@@ -153,7 +154,7 @@
                     <span><h4>heading3</h4></span>
                 </div>
                 <div class="card-desc">
-                    <h3>Header 3</h3>
+                    <h3>Crying for Zimbabwe</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
                         voluptas totam</p>
                     <a href="#" class="btn-card">Read</a>
@@ -161,10 +162,50 @@
             </div>
         </div>
     </div>
+    <div class="p-3"></div> <!-- used to separate the two sections -->
+    <h2 class="text-center m-3 text-success">Timeline</h2>
+    <div class="row mt-3">
 
-
-    {{--<div class="row mt-3">--}}
-        {{--<div class="col-4 bg-dark p-5">side bar</div>--}}
-        {{--<div class="col-8 bg-warning">posts area</div>--}}
-    {{--</div>--}}
+        <div class="col-3 border-danger p-5">
+            <h4 class="text-center m-3">nav area</h4>
+        </div>
+        <div class="col text-right ">
+            <div class="card-content col-8 mx-auto">
+                <div class="row mt-2 mb-2">
+                    <div class="col-6 card-img">
+                        <img src="https://placeimg.com/380/230/tech" alt="">
+                    </div>
+                    <div class="card-desc">
+                        <h3>Header 3</h3>
+                    </div>
+                    <div class="mb-3"></div>
+                </div>
+            </div>
+            <div class="card-content col-8 mx-auto">
+                <div class="row mt-2 mb-2">
+                    <div class="col-6 card-img">
+                        <img src="https://placeimg.com/380/230/nature" alt="">
+                    </div>
+                    <div class="card-desc">
+                        <h3>heading 2</h3>
+                    </div>
+                    <div class="mb-3"></div>
+                </div>
+            </div>
+            <div class="card-content col-8 mx-auto">
+                <div class="row mt-2 mb-2">
+                    <div class="col-6 card-img">
+                        <img src="https://placeimg.com/380/230/tec" alt="">
+                    </div>
+                    <div class="card-desc">
+                        <h3>heading 4</h3>
+                    </div>
+                    <div class="mb-3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <h4 class="text-center m-3">back in time</h4>
+        </div>
+    </div>
     </div>
