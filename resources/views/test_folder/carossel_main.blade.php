@@ -6,16 +6,18 @@
         /* card details start  */
         @import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:400,400i,700,700i');
         section{
-            padding: 80px 0;
+            padding: 30px 0;
         }
         .details-card {
             background: #ecf0f1;
         }
 
+
         .card-content {
             background: #ffffff;
             border: 4px;
             box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+
         }
 
         .card-img {
@@ -23,10 +25,11 @@
             overflow: hidden;
             border-radius: 0;
             z-index: 1;
+
         }
 
         .card-img img {
-            width: 100%;
+            width: 75%;
             height: auto;
             display: block;
         }
@@ -114,11 +117,10 @@
     <!-- details card section starts from here -->
 <div class="container  ">
     <h2 class="text-center mb-3">Trending now</h2>
-<div class="d-sm-none d-lg-block">
     <div class="row">
-        <div class="col-md-4 ">
+        <div class="col-md-4">
             <div class="card-content">
-                <div class="card-img">
+                <div class="card-img mx-5 mt-1">
                     <img src="https://placeimg.com/380/230/nature" alt="">
                     <span><h4>#bringBack</h4></span>
                 </div>
@@ -132,7 +134,7 @@
         </div>
         <div class="col-md-4">
             <div class="card-content">
-                <div class="card-img">
+                <div class="card-img mx-5 mt-1">
                     <img src="https://placeimg.com/380/230/animals" alt="">
                     <span><h4>heading2</h4></span>
                 </div>
@@ -146,7 +148,7 @@
         </div>
         <div class="col-md-4 ">
             <div class="card-content">
-                <div class="card-img">
+                <div class="card-img mx-5 mt-1">
                     <img src="https://placeimg.com/380/230/tech" alt="">
                     <span><h4>heading3</h4></span>
                 </div>
@@ -159,10 +161,10 @@
             </div>
         </div>
     </div>
-</div>
 
-    <div class="row mt-3">
-        <div class="col-4 bg-dark p-5">side bar</div>
-        <div class="col-8 bg-warning p-5">posts area</div>
-    </div>
+
+    {{--<div class="row mt-3">--}}
+        {{--<div class="col-4 bg-dark p-5">side bar</div>--}}
+        {{--<div class="col-8 bg-warning">posts area</div>--}}
+    {{--</div>--}}
     </div>
