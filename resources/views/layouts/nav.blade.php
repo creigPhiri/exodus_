@@ -14,9 +14,11 @@
             <li class="nav-item">
                 <a class="nav-link" href="#">Profile</a>
             </li>
-
             <li class="nav-item">
-                <a class="nav-link" href="#">Menu Item</a>
+                <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-danger" href="#">Trending</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0" action="#">

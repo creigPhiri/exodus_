@@ -2,6 +2,7 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <style>
         /* card details start  */
         @import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:400,400i,700,700i');
@@ -117,95 +118,93 @@
     <!-- details card section starts from here -->
 <div class="container  ">
     @include('layouts.nav')
+
+<div class="row  justify-content-center d-none">
     <h2 class="text-center m-3">Trending now</h2>
-    <div class="row">
-        <div class="col-md-4">
+        {{--<div class="col-md-4">--}}
+            {{--<div class="card-content">--}}
+                {{--<div class="card-img mx-5 mt-1">--}}
+                    {{--<img src="https://placeimg.com/380/230/nature" alt="">--}}
+                    {{--<span><h4>#bringBack</h4></span>--}}
+                {{--</div>--}}
+                {{--<div class="card-desc">--}}
+                    {{--<h3>Dear Mr President</h3>--}}
+                    {{--<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis--}}
+                        {{--voluptas totam</p>--}}
+                    {{--<a href="#" class="btn-card">Read</a>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        <div class="col-md-2">
             <div class="card-content">
-                <div class="card-img mx-5 mt-1">
-                    <img src="https://placeimg.com/380/230/nature" alt="">
-                    <span><h4>#bringBack</h4></span>
-                </div>
-                <div class="card-desc">
-                    <h3>Dear Mr President</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
-                        voluptas totam</p>
-                    <a href="#" class="btn-card">Read</a>
+                <div class="row mt-2 mb-2">
+                    <div class=" card-img">
+                        <img class="img-responsive rounded mx-auto my-3" src="https://www.aljazeera.com/mritems/imagecache/mbdxxlarge/mritems/Images/2017/11/20/a901e05caa0649339ef3cda148ee1d3a_18.jpg" alt="">
+                    </div>
+                    <div class="card-desc">
+                        <p>gucci grace <i></i></p>
+                        <small class="text-muted">30days ago</small><a href="#" class="active">@i_are_omar</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-2">
             <div class="card-content">
-                <div class="card-img mx-5 mt-1">
-                    <img src="https://placeimg.com/380/230/animals" alt="">
-                    <span><h4>heading2</h4></span>
-                </div>
-                <div class="card-desc">
-                    <h3>Bring back Zimbabwe</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
-                        voluptas totam</p>
-                    <a href="#" class="btn-card">Read</a>
+                <div class="row mt-2 mb-2">
+                    <div class=" card-img">
+                        <img class="img-responsive rounded mx-auto my-3" src="https://harareblitz.com/wp-content/uploads/2018/09/Mnangagwa-sad_600x387-1-600x381.jpg" alt="">
+                    </div>
+                    <div class="card-desc">
+                        <p>Forgive us mr cocodile <i></i></p>
+                        <small class="text-muted">30days ago</small><a href="#" class="active">@i_are_omar</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 ">
+        <div class="col-md-2">
             <div class="card-content">
-                <div class="card-img mx-5 mt-1">
-                    <img src="https://placeimg.com/380/230/tech" alt="">
-                    <span><h4>heading3</h4></span>
-                </div>
-                <div class="card-desc">
-                    <h3>Crying for Zimbabwe</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
-                        voluptas totam</p>
-                    <a href="#" class="btn-card">Read</a>
+                <div class="row mt-2 mb-2">
+                    <div class=" card-img">
+                        <img class="img-responsive rounded mx-auto my-3" src="https://www.aljazeera.com/mritems/imagecache/mbdxxlarge/mritems/Images/2017/10/22/03cefdee531c450fa139a68533784c33_18.jpg" alt="">
+                    </div>
+                    <div class="card-desc">
+                        <p>Bob vs the crocodile<i></i></p>
+                        <small class="text-muted">30days ago</small><a href="#" class="active">@i_are_omar</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="p-3"></div> <!-- used to separate the two sections -->
-    <h2 class="text-center m-3 text-success">Timeline</h2>
     <div class="row mt-3">
 
-        <div class="col-3 border-danger p-5">
+        <div class="col-2 border-danger">
             <h4 class="text-center m-3">nav area</h4>
         </div>
-        <div class="col text-right ">
+        <div class="col">
+            <h2 class="text-center m-3 text-success">Timeline</h2>
             <div class="card-content col-8 mx-auto">
                 <div class="row mt-2 mb-2">
                     <div class="col-6 card-img">
-                        <img src="https://placeimg.com/380/230/tech" alt="">
+                        <img class="img-responsive rounded-circle mx-auto my-3" src="https://gdb.voanews.com/D23422B2-F20A-4202-9DE8-6CB85AE16E6E_cx17_cy14_cw75_w1023_r1_s.jpg" alt="">
                     </div>
                     <div class="card-desc">
-                        <h3>Header 3</h3>
-                    </div>
-                    <div class="mb-3"></div>
-                </div>
-            </div>
-            <div class="card-content col-8 mx-auto">
-                <div class="row mt-2 mb-2">
-                    <div class="col-6 card-img">
-                        <img src="https://placeimg.com/380/230/nature" alt="">
-                    </div>
-                    <div class="card-desc">
-                        <h3>heading 2</h3>
-                    </div>
-                    <div class="mb-3"></div>
-                </div>
-            </div>
-            <div class="card-content col-8 mx-auto">
-                <div class="row mt-2 mb-2">
-                    <div class="col-6 card-img">
-                        <img src="https://placeimg.com/380/230/tec" alt="">
-                    </div>
-                    <div class="card-desc">
-                        <h3>heading 4</h3>
+                        <p>I think Ediot should go</p>
+                           <small class=" text-muted">12days ago</small><a href="#" class="active">@creig</a>
                     </div>
                     <div class="mb-3"></div>
                 </div>
             </div>
         </div>
-        <div class="col-2">
-            <h4 class="text-center m-3">back in time</h4>
+        <div class="col-1">
+            <h4 class="text-center m-3">Archives</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">June 2018</li>
+                <li class="list-group-item">Dec 2017</li>
+                <li class="list-group-item">Nov 2018</li>
+                <li class="list-group-item">Oct 2018</li>
+            </ul>
         </div>
     </div>
-    </div>
+</div>
+
