@@ -6,26 +6,8 @@
 
 
     <style>
-        .image_outer_container{
-            margin-top: auto;
-            margin-bottom: auto;
-            border-radius: 50%;
-            position: relative;
-        }
 
-        .image_inner_container{
-            border-radius: 50%;
-            padding: 5px;
-            background: #833ab4;
-            background: -webkit-linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4);
-            background: linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4);
-        }
-        .image_inner_container img{
-            height: 200px;
-            width: 200px;
-            border-radius: 50%;
-            border: 5px solid white;
-        }
+
     </style>
 
 
@@ -40,15 +22,18 @@
         <div class="col-3 ">
             <div class="d-inline-flex d-block">
                 <div class="image_outer_container">
-                    <div class="green_icon"></div>
+                    <div class="green_icon text-center"></div>
                     <div class="image_inner_container">
                         <img src="https://i0.wp.com/tricksmaze.com/wp-content/uploads/2017/04/Stylish-Girls-Profile-Pictures-36.jpg?resize=300%2C300&ssl=1">
+                    </div>
+                    <div class="mt-3">
+                        <h3 class="text-center">{{'@'.Auth::user()->name}}</h3>
                     </div>
                 </div>
             </div>
         </div>
           <div class="col">
-             <h2 class="text-center m-3 youTube-red">Timeline</h2>
+             <h2 class="text-center youTube-red">Timeline</h2>
              <div class="row">
                                 <form method="post" action="" class="col-8 mx-auto row">
                                     {{ csrf_field() }}
@@ -64,7 +49,7 @@
           </div>
 
         <div class="col-1">
-            <h4 class="text-center m-3">Archives</h4>
+            <h4 class="text-center m-3 youTube-red">Archives</h4>
             <ul class="list-group list-group-flush">
                 @foreach($archives as $archive)
                     <li class="list-group-item">
