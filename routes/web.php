@@ -38,3 +38,4 @@ Route::get('unfollow','UsersController@unfollow');
 Route::get('test','UsersController@test');
 
 Route::get('caro',function (){return view('test_folder.carossel_main');});
+Route::get('trending',function (){return view('test_folder.trending');});

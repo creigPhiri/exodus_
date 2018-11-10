@@ -119,8 +119,8 @@
 <div class="container  ">
     @include('layouts.nav')
 
-<div class="row  justify-content-center d-none">
-    <h2 class="text-center m-3">Trending now</h2>
+{{--<div class="row  justify-content-center d-none">--}}
+    {{--<h2 class="text-center m-3">Trending now</h2>--}}
         {{--<div class="col-md-4">--}}
             {{--<div class="card-content">--}}
                 {{--<div class="card-img mx-5 mt-1">--}}
@@ -135,46 +135,46 @@
                 {{--</div>--}}
             {{--</div>--}}
         {{--</div>--}}
-        <div class="col-md-2">
-            <div class="card-content">
-                <div class="row mt-2 mb-2">
-                    <div class=" card-img">
-                        <img class="img-responsive rounded mx-auto my-3" src="https://www.aljazeera.com/mritems/imagecache/mbdxxlarge/mritems/Images/2017/11/20/a901e05caa0649339ef3cda148ee1d3a_18.jpg" alt="">
-                    </div>
-                    <div class="card-desc">
-                        <p>gucci grace <i></i></p>
-                        <small class="text-muted">30days ago</small><a href="#" class="active">@i_are_omar</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-2">
-            <div class="card-content">
-                <div class="row mt-2 mb-2">
-                    <div class=" card-img">
-                        <img class="img-responsive rounded mx-auto my-3" src="https://harareblitz.com/wp-content/uploads/2018/09/Mnangagwa-sad_600x387-1-600x381.jpg" alt="">
-                    </div>
-                    <div class="card-desc">
-                        <p>Forgive us mr cocodile <i></i></p>
-                        <small class="text-muted">30days ago</small><a href="#" class="active">@i_are_omar</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-2">
-            <div class="card-content">
-                <div class="row mt-2 mb-2">
-                    <div class=" card-img">
-                        <img class="img-responsive rounded mx-auto my-3" src="https://www.aljazeera.com/mritems/imagecache/mbdxxlarge/mritems/Images/2017/10/22/03cefdee531c450fa139a68533784c33_18.jpg" alt="">
-                    </div>
-                    <div class="card-desc">
-                        <p>Bob vs the crocodile<i></i></p>
-                        <small class="text-muted">30days ago</small><a href="#" class="active">@i_are_omar</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        {{--<div class="col-md-2">--}}
+            {{--<div class="card-content">--}}
+                {{--<div class="row mt-2 mb-2">--}}
+                    {{--<div class=" card-img">--}}
+                        {{--<img class="img-responsive rounded mx-auto my-3" src="https://www.aljazeera.com/mritems/imagecache/mbdxxlarge/mritems/Images/2017/11/20/a901e05caa0649339ef3cda148ee1d3a_18.jpg" alt="">--}}
+                    {{--</div>--}}
+                    {{--<div class="card-desc">--}}
+                        {{--<p>gucci grace <i></i></p>--}}
+                        {{--<small class="text-muted">30days ago</small><a href="#" class="active">@i_are_omar</a>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="col-md-2">--}}
+            {{--<div class="card-content">--}}
+                {{--<div class="row mt-2 mb-2">--}}
+                    {{--<div class=" card-img">--}}
+                        {{--<img class="img-responsive rounded mx-auto my-3" src="https://harareblitz.com/wp-content/uploads/2018/09/Mnangagwa-sad_600x387-1-600x381.jpg" alt="">--}}
+                    {{--</div>--}}
+                    {{--<div class="card-desc">--}}
+                        {{--<p>Forgive us mr cocodile <i></i></p>--}}
+                        {{--<small class="text-muted">30days ago</small><a href="#" class="active">@i_are_omar</a>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="col-md-2">--}}
+            {{--<div class="card-content">--}}
+                {{--<div class="row mt-2 mb-2">--}}
+                    {{--<div class=" card-img">--}}
+                        {{--<img class="img-responsive rounded mx-auto my-3" src="https://www.aljazeera.com/mritems/imagecache/mbdxxlarge/mritems/Images/2017/10/22/03cefdee531c450fa139a68533784c33_18.jpg" alt="">--}}
+                    {{--</div>--}}
+                    {{--<div class="card-desc">--}}
+                        {{--<p>Bob vs the crocodile<i></i></p>--}}
+                        {{--<small class="text-muted">30days ago</small><a href="#" class="active">@i_are_omar</a>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
     <div class="p-3"></div> <!-- used to separate the two sections -->
     <div class="row mt-3">
 

@@ -6,7 +6,7 @@ $url = parse_url(getenv("CLEARDB_GOLD_URL"));
 
 $server = $url["host"] ?? null;
 $username = $url["user"] ?? 'root';
-$password = $url["pass"] ?? '';
+$password = $url["pass"] ?? 'super-secret-password';
 $db = substr($url["path"] , 1)?? null;
 
     $conn = new mysqli($server, $username, $password, $db);
