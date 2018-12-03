@@ -32,7 +32,7 @@
                 </div>
             </div>
         </div>
-          <div class="col">
+          <div class="col col-sm-10 mx-auto">
              <h2 class="ml-5 color-dd-gradient text-center">Timeline</h2>
              <div class="row">
                                 <form method="post" action="" class="col-8 mx-auto row">
