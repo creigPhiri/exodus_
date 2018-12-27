@@ -4,7 +4,7 @@
 
 $url = parse_url(getenv("CLEARDB_GOLD_URL"));
 
-$server = $url["host"] ?? null;
+$server = $url["host"] ?? '127.0.0.1';
 $username = $url["user"] ?? 'root';
 $password = $url["pass"] ?? 'super-secret-password';
 $db = substr($url["path"] , 1)?? null;
@@ -71,7 +71,7 @@ return [
 
         'mysql_testing' => [
             'driver' => 'mysql',
-            'host' => $server,
+            'host' => $server ,
             'port' => env('DB_PORT', '3306'),
             'database' => $db,
             'username' => $username ,

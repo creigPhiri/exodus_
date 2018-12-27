@@ -43,3 +43,4 @@ Route::get('trending',function (){return view('test_folder.trending');});
 
 Route::get('profile',function (){return view('test_folder.profile');});
 
+Route::get('card', function(){return view('test_folder.card');});

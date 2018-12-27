@@ -38,8 +38,8 @@ class PostsController extends Controller
                     ->toArray();
         $tags =\App\Tag::has('posts')->pluck('name');
 
-        return view('test_folder.carossel_main',compact(['posts','archives','tags']));
-        //return view('posts.index',compact(['posts','archives','tags']));
+//        return view('test_folder.carossel_main',compact(['posts','archives','tags']));
+        return view('posts.index',compact(['posts','archives','tags']));
 
     }
 

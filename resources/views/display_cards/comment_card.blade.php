@@ -2,24 +2,24 @@
 
 <div id="show_comment?{{$post->id}}" class="collapse">
 @foreach($post['comments'] as $comment)
-    <div class=" ml-3 p-1">
-        <div class="text-warning">
-            {{$comment->comment_body}}
-            <small class="text-muted text-right ml-2">{{$comment->created_at->diffforhumans()}}</small>
+    <div class="">
+        <div class="h-25">
+            <div class="row">
+                <div class="col-5">
+                    <div class="row">
+                        <img class="img-responsive img-circle col-8 w-25 h-25" src="{{asset('images/default.png')}}">
+                        <a href="#" class="active col-8 mt-1">{{'@'. $comment->users->name}}</a>
+                    </div>
+
+                </div>
+                <div class="col ml-0">
+                    {{$comment->comment_body}}
+                    <small class="text-muted text-left">{{$comment->created_at->diffforhumans()}}</small>
+                </div>
+            </div>
+
         </div>
     </div>
-
-        {{--<div class="card-content col-8 mx-auto">--}}
-            {{--<div class="row">--}}
-                {{--<div class="col-6 card-img">--}}
-                    {{--<img src="https://placeimg.com/380/230/tech" alt="">--}}
-                {{--</div>--}}
-                {{--<div class="card-desc">--}}
-                    {{--{{$comment->comment_body}}--}}
-                    {{--<small class="text-muted text-right ml-2">{{$comment->created_at->diffforhumans()}}</small>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</div>--}}
 
 @endforeach
 </div>

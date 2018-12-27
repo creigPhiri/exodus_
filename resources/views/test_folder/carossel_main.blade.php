@@ -5,10 +5,6 @@
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
 
 
-    <style>
-
-
-    </style>
 
 
     <!-- details card section starts from here -->
@@ -19,7 +15,7 @@
     <div class="p-3"></div> <!-- used to separate the two sections -->
     <div class="row mt-3">
 
-        <div class="col-3 ">
+        <div class="col-3">
             <div class="d-inline-flex d-block">
                 <div class="image_outer_container">
                     <div class="green_icon text-center"></div>
@@ -32,7 +28,7 @@
                 </div>
             </div>
         </div>
-          <div class="col col-sm-10 mx-auto">
+          <div class="col">
              <h2 class="ml-5 color-dd-gradient text-center">Timeline</h2>
              <div class="row">
                                 <form method="post" action="" class="col-8 mx-auto row">
