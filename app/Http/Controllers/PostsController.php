@@ -39,7 +39,7 @@ class PostsController extends Controller
         $tags =\App\Tag::has('posts')->pluck('name');
 
 //        return view('test_folder.carossel_main',compact(['posts','archives','tags']));
-        return view('posts.index',compact(['posts','archives','tags']));
+        return view('posts.index',compact(['posts','archives']));
 
     }
 
