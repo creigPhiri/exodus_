@@ -15,7 +15,7 @@
        <ol class="list-unstyled mb-0">
         @foreach($tags as $tag)
             <li>
-              <a href="#{{$tag}}"> #{{$tag}}</a>
+              <a href="#{{$tag->name}}" class="text-primary font-weight-bold"> #{{$tag->name}}</a>
             </li>
         @endforeach
        </ol>

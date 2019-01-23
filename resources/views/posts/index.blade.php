@@ -31,6 +31,7 @@
                                 </div>
                             @endif
                          </div>
+
                          <form method="post" action="" class="mb-3 card-desc">
                             {{ csrf_field() }}
                             <div class="mx-auto w-75">

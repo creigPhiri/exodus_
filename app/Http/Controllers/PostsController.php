@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Post;
+use App\Tag;
 
 
 class PostsController extends Controller
@@ -36,10 +37,11 @@ class PostsController extends Controller
                     ->orderByRaw('min(created_at)','desc')
                     ->get()
                     ->toArray();
-        $tags =\App\Tag::has('posts')->pluck('name');
+//        $tags =\App\Tag::has('posts')->pluck('name');
+        $tags =Tag::all();
 
-        return view('test_folder.carossel_main',compact(['posts','archives','tags']));
-//        return view('posts.index',compact(['posts','archives']));
+//        return view('test_folder.carossel_main',compact(['posts','archives','tags']));
+        return view('posts.index',compact(['posts','archives','tags']));
 
     }
 
