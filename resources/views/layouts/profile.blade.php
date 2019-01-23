@@ -1,6 +1,6 @@
-<nav class="col-md-3 d-none d-sm-block sidebar mt-5">
-    <div class="mx-auto mb-3 border-danger" style="border: 1px solid black; height: 100px; width: 100px">
-       <img src={{URL::to('/').'/images/' . Auth::user()->image_url}} />
+<nav class="col-md-3 row d-none d-sm-block sidebar mt-5">
+    <div class="col-8 offset-1 mb-3 border-danger">
+       <img class="img-responsive" style="width: 200px; height: auto" src={{URL::to('/').'/images/' . Auth::user()->image_url}} />
     </div>
         <form action="/imageUpload" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
