@@ -11,7 +11,6 @@
 <div class="container  ">
     @include('layouts.nav')
 
-
     <div class="p-3"></div> <!-- used to separate the two sections -->
     <div class="row mt-3">
 

@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\UserFollower;
 use Illuminate\Http\Request;
 use App\User;
+use Illuminate\Support\Facades\Auth;
+
 class UsersController extends Controller
 {
     public function showAll()
@@ -51,5 +53,27 @@ class UsersController extends Controller
 
     public function test(){
         return view('test_folder.profile');
+    }
+
+    public function imageUpload(Request $request)
+        //param: request object which gets the image file
+        //action: uploads a user image
+    {
+        $this->validate($request, [
+            'imageFile' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+
+        if ($request->hasFile('imageFile')) {
+            $image = $request->file('imageFile');
+            $name = 'user_'.Auth::user()->user_id.'.'.$image->getClientOriginalExtension();
+            $destinationPath = public_path('/images');
+            $image->move($destinationPath, $name);
+
+            $user = Auth::user();
+            $user->image_url = $name;
+            $user->save();
+            return back()->with('success','Image Upload successfully');
+        }
+
     }
 }
