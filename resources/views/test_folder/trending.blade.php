@@ -12,7 +12,7 @@
     <h2 class="text-center h2">Trending now</h2>
 <div class="row  justify-content-center">
 
-        <div class="col-md-4">
+        <div class="col-10 col-md-8">
             <div class="card-content">
                 <div class="card-img mx-5 mt-1">
                     <img src="https://placeimg.com/380/230/nature" alt="">

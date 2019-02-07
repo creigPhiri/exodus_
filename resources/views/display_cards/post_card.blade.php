@@ -71,10 +71,14 @@ Hero
 
                     <div class="cardbox-heading">
                         <div class="media m-0">
-                            <div class="d-flex mr-2">
-                                <a href=""><img class="img-fluid rounded-circle h-75" src="http://www.themashabrand.com/templates/bootsnipp/post/assets/img/users/4.jpg" alt="User"></a>
+                            <div class="d-flex row">
+                                @if($post->users->image_url)
+                                    <a href="" ><img class="img-fluid rounded-circle h-75 " src="{{URL::to('/').'/images/' . $post->users->image_url}}" alt="User" style="width: 112.5px; height: 112.5px"></a>
+                                @else
+                                    <a href=""><img class="img-fluid rounded-circle h-75" src="http://www.themashabrand.com/templates/bootsnipp/post/assets/img/users/4.jpg" alt="User"></a>
+                                @endif
                             </div>
-                            <div class="media-body">
+                            <div class="media-body " style="margin: 0">
                                 <strong class="m-0 text-primary">{{'@'. $post->users->name}}</strong>
                                 <small><span><i class="icon ion-md-time"></i> {{$post->created_at->diffforhumans()}}</span></small>
                                 <p class="m-0">
