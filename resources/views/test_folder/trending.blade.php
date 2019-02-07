@@ -12,7 +12,7 @@
     <h2 class="text-center h2">Trending now</h2>
 <div class="row ">
 
-        <div class="col-sm-12 col-md-10 offset-md-2 mt-5" >
+        <div class="col-sm-12 col-md-12  mt-5" >
 
             <div class="card-content">
                 <div class="card-header" style="background-color: white; border-bottom: none">
@@ -77,7 +77,7 @@
         {{--</div>--}}
     {{--</div>--}}
     </div>
-    <div class="col-sm-12 col-md-10 offset-md-2 mt-5" >
+    <div class="col-sm-12 col-md-12 mt-5" >
 
         <div class="card-content">
             <div class="card-header" style="background-color: white; border-bottom: none">
@@ -104,7 +104,7 @@
     </div>
 
 
-        <div class="col-sm-12 col-md-10 offset-md-2 mt-5" >
+        <div class="col-sm-12 col-md-12  mt-5" >
 
             <div class="card-content">
                 <div class="card-header" style="background-color: white; border-bottom: none">
