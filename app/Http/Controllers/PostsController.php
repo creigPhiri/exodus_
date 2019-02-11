@@ -6,6 +6,8 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Post;
 use App\Tag;
+use function MongoDB\BSON\toJSON;
+use PHPUnit\Util\Json;
 
 
 class PostsController extends Controller
@@ -40,8 +42,8 @@ class PostsController extends Controller
 //        $tags =\App\Tag::has('posts')->pluck('name');
         $tags =Tag::all();
 
-//        return view('test_folder.carossel_main',compact(['posts','archives','tags']));
-        return view('posts.index',compact(['posts','archives','tags']));
+        return view('test_folder.trending',compact(['posts','archives','tags']));
+//        return view('posts.index',compact(['posts','archives','tags']));
 
     }
 
@@ -52,6 +54,7 @@ class PostsController extends Controller
     }
 
 
+
     public function store(Request $request)
         #used to create and store a new post
         #Request obj passes the post infor and userID which is taken from the Authenticated user
@@ -60,6 +63,8 @@ class PostsController extends Controller
         $post = new Post;
         $post->post_body = request('post_body');
         $post->user_id = \Auth::id();
+        $post->post_title = request('post_title');
+        $post->post_image = request('post_image');
         $post->save();
 
         return redirect('/index');
