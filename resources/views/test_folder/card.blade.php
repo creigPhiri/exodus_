@@ -13,14 +13,8 @@
             </div>
         </div>
         <div class="card-desc col-10 offset-1 text-truncate">
-            <p class="text-secondary">Do you hate Zimbabwe that much? Have the good people done you wrong? You are the first citizen. Is it not for you
-                to protect the flock? How long shall my people cry. How long shall a minority hold an entire nation hostage.
-                How long shall be the voice of the people be silenced. How long shall my people starve.
-            </p>
-            <p class="text-secondary ">Do you hate Zimbabwe that much? Have the good people done you wrong? You are the first citizen. Is it not for you
-                to protect the flock? How long shall my people cry. How long shall a minority hold an entire nation hostage.
-                How long shall be the voice of the people be silenced. How long shall my people starve.
-            </p>
+            <p class="text-secondary">{{ $post->post_body }} </p>
+
             <div class="text-right pr-5">
                 <a href="#" class="card-link">Read</a>
                 <a href="#" class="card-link" ><i class="far fa-comment fa-lg" ></i> 5</a>
