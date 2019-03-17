@@ -21,7 +21,7 @@ Route::get('/index', 'PostsController@index')->name('home');        //directs to
 
 Route::post('/index','PostsController@store');                      //used to store new post
 
-Route::post('comment','CommentsController@store');                  //used to store new comment
+//Route::post('comment','CommentsController@store');                  //used to store new comment
 
 Route::get('logout','Auth\LoginController@destroy');                //destroy session (logout)
 
@@ -44,3 +44,5 @@ Route::get('trending',function (){return view('test_folder.trending');});
 Route::get('profile',function (){return view('test_folder.profile');});
 
 Route::post('imageUpload','UsersController@imageUpload');
+
+Route::get('comments',function(){return view('test_folder.comments'); });

@@ -10,11 +10,11 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 
-<div class="container  ">
+<div class="container-fluid ml-1 mr-1">
 @include('layouts.nav')
 
     <h2 class="text-center h2">Trending now</h2>
-<div class="row " style="max-height: 100px ">
+<div class="row text-center" style="max-height: 100px ">
     @foreach($posts as $post)
         @include('test_folder.card')    {{-- including the trending card --}}
         @endforeach
