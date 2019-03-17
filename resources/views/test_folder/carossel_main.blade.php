@@ -19,7 +19,7 @@
                 <div class="image_outer_container">
                     <div class="green_icon text-center"></div>
                     <div class="image_inner_container">
-                        <img src="https://gdb.voanews.com/D23422B2-F20A-4202-9DE8-6CB85AE16E6E_cx17_cy14_cw75_w1023_r1_s.jpg">
+                        <img src="https://http2.mlstatic.com/quadro-personalidade-nelson-mande-29x42-moldura-madeira-1102-D_NQ_NP_980480-MLB28001804510_082018-F.jpg">
                     </div>
                     <div class="mt-3">
                         <h3 class="text-center youTube-red">{{'@'.Auth::user()->name}}</h3>

@@ -3,7 +3,7 @@
         <div class="card-header" style="background-color: white; border-bottom: none">
             <div class="row">
                 <div class=" col-auto offset-1 offset-lg-1 col-lg-4 ">
-                    <img src="https://bit.ly/2Gn9dQq" alt="" width="120px" height="120px" class="rounded-circle img-responsive">
+                    <img src="https://http2.mlstatic.com/quadro-personalidade-nelson-mande-29x42-moldura-madeira-1102-D_NQ_NP_980480-MLB28001804510_082018-F.jpg" alt="" width="120px" height="120px" class="rounded-circle img-responsive">
                 </div>
                 <div class=" ml-5 my-auto">
                     <h3 class="text-secondary card-title">{{$post->post_title}}</h3>
