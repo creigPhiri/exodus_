@@ -6,7 +6,6 @@
                     <div class=" col-3 justify-content-center align-items-center">
                         <img src="https://http2.mlstatic.com/quadro-personalidade-nelson-mande-29x42-moldura-madeira-1102-D_NQ_NP_980480-MLB28001804510_082018-F.jpg" alt="" width="60px" height="60px" class="mb-2 rounded-circle img-responsive">
                         <span class="text-primary d-inline ">{{'@'.$post->users->name}}</span>
-
                     </div>
                     <div class=" col row">
                         <div class="col-12" >
