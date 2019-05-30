@@ -46,3 +46,5 @@ Route::get('profile',function (){return view('test_folder.profile');});
 Route::post('imageUpload','UsersController@imageUpload');
 
 Route::get('comments',function(){return view('test_folder.comments'); });
+
+Route::get('post/{id}','PostsController@show');

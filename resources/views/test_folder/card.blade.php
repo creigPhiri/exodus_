@@ -14,7 +14,7 @@
                             </div>
                             <div class="">
                                 <span class="text-muted pl-3 mr-1" style="font-size: 12px">{{$post->created_at->diffforhumans()}}</span>
-                                <a href="/comments" class="card-link">Read ...</a>
+                                <a href="/post/{{$post->id}}" target="_blank" class="card-link">Read ...</a>
                                 <a href="#" class="card-link" ><i class="far fa-comment fa-lg" ></i> 5</a>
                                 <a href="#" class="card-link"><i class="far fa-thumbs-up fa-lg"></i></a>
                             </div>

@@ -71,9 +71,12 @@ class PostsController extends Controller
     }
 
 
-    public function show($id)
+    public function show(Request $request, $id)
+   //return:
+   //params: post_id
     {
-        //
+        $post = Post::find($id);
+        return view("test_folder.postFullScreen",compact(['post']));
     }
 
 
