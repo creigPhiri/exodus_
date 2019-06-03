@@ -1,4 +1,4 @@
-    <div class="col-12 col-md-12 offset-3 mt-3 col-lg-6 " style="opacity: 0.9; border-radius: 4%">
+    <div class="col-12 col-md-12 offset-lg-3 mt-3 col-lg-6 " style="opacity: 0.9; border-radius: 4%">
         <div class="card-content" style="border-radius: 3%">
             <div class="card-header" style="background-color: white; border-bottom: none">
                 <h3 class="h3 font-weight-bold" style="font-family: 'Quattrocento Sans', sans-serif; ">{{$post->post_title}}</h3>
