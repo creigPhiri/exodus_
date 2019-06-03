@@ -4,7 +4,9 @@
         <div class="row">
             <div class="col-1 p-0">
                 <div class="">
-                    <img class="img-fluid rounded-circle" style="height:60px; width: 60px" src="{{asset('images/default.png')}}">
+                    <div class="bg-dark justify-content-center " style="height:60px; width:60px; border-radius:  50%">
+                      <p class="text-capitalize text-white text-center pt-1" style="font-size: 30px">{{substr($comment->users->name,0,1)}}</p>
+                    </div>
                 </div>
             </div>
             <div class="col">
