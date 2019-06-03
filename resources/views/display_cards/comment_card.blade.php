@@ -2,14 +2,14 @@
 <div class="ml-5" style="height: 100px">
     <div class="h-25">
         <div class="row">
-            <div class="col-1 p-0">
+            <div class="col-1 p-0 mr-1">
                 <div class="">
                     <div class="bg-dark justify-content-center " style="height:60px; width:60px; border-radius:  50%">
                       <p class="text-capitalize text-white text-center pt-1" style="font-size: 30px">{{substr($comment->users->name,0,1)}}</p>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col col-sm-8">
                 <div>
                   {{$comment->comment_body}}
                 </div>
