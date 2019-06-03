@@ -1,8 +1,8 @@
 @include('layouts.layout')
 
-<div class="h-100" style="background-image: url('/images/dandelion.jpg')">
+<div class="h-100" style="background-image: url('/images/authBackground.jpg')">
     <div class="row justify-content-center align-self-center">
-        <div class="col-md-6 col-lg-5 py-5 ">
+        <div class="col-md-6 col-lg-4 py-5 ">
             <div class="card">
                 <div class="card-header h4">{{ __('Login') }}</div>
 
@@ -53,10 +53,10 @@
                                 <button type="submit" class="btn btn-primary col-10 offset-1">
                                     {{ __('Login') }}
                                 </button>
-                                <a class="text-center text-danger font-weight-bold col-10 mt-3 offset-1" href="{{ route('register') }}">New User ?</a>
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    {{ __('Forgot Your Password?') }}
-                                </a>
+                                <a class="btn btn-link" href="{{ route('register') }}">New User ?</a>
+                                {{--<a class="btn btn-link" href="{{ route('password.request') }}">--}}
+                                    {{--{{ __('Forgot Your Password?') }}--}}
+                                {{--</a>--}}
                             </div>
                         </div>
                     </form>

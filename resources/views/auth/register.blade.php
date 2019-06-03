@@ -1,8 +1,8 @@
 @include('layouts.layout')
 
-<div class="h-100" style="background-image: url('/images/dandelion.jpg')">
+<div class="h-100" style="background-image: url('/images/authBackground.jpg')">
     <div class="row justify-content-center align-self-center">
-        <div class="col-md-6 col-lg-5 py-5 ">
+        <div class="col-md-6 col-lg-4 py-5 ">
             <div class="card">
                 <div class="card-header">{{ __('Register') }}</div>
 
