@@ -17,7 +17,7 @@
           integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body class="bg-light">
-    <div id="app" class="container bg-white">
+    <div id="app" class="container bg-white h-100">
 <nav class="navbar navbar-expand-md navbar-light border-bottom shadow-lg">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -66,7 +66,7 @@
             </div>
         </nav>
         @include('display_cards.errors')
-        <main class="py-4">
+        <main class="py-4 flex-fill">
             @yield('content')
         </main>
     </div>

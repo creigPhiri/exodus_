@@ -1,9 +1,8 @@
-@extends('layouts.master')
+@include('layouts.layout')
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
+<div class="h-100" style="background-image: url('/images/dandelion.jpg')">
+    <div class="row justify-content-center align-self-center">
+        <div class="col-md-6 col-lg-5 py-5 ">
             <div class="card">
                 <div class="card-header">{{ __('Register') }}</div>
 
@@ -63,9 +62,11 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary col-10 offset-1">
                                     {{ __('Register') }}
                                 </button>
+                                <a class="nav-link text-danger offset-1 col-10 mt-3 text-center font-weight-bold" href="{{ route('login') }}">Returning User ?</a>
+                            </div>
                             </div>
                         </div>
                     </form>
@@ -74,4 +75,3 @@
         </div>
     </div>
 </div>
-@endsection

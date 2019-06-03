@@ -20,4 +20,8 @@ class Post extends Model
     public function tags(){
         return $this->belongsToMany(Tag::class);
     }
+
+    public function totalNumberOfComments(){
+        return $this->hasMany(Comment::class,"post_id","id");
+    }
 }
