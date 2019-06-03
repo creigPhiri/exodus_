@@ -4,13 +4,16 @@
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <div class="container" style=" background-color:#fff ;height: 100%">
     @include('layouts.nav')
-    <h1>{{$post->post_title}}<span class="font-weight-normal text-muted" style="font-size: medium"> {{$post->users->name}}</span></h1>
-    <p>
+    <div class="jumbotron bg-dark text-white">
+      <h1 class="display-3 font-italic">{{$post->post_title}}</h1>
+      <p class="lead my-3 font-italic">
         {{$post->post_body}}
-    </p>
-    <span >
+      </p>
+    <a class="nav-link active"> {{$post->users->name}}</a>
+    </div>
+    <section >
         @foreach($post->comments as $comment)
         @include("display_cards.comment_card")
         @endforeach
-    </span>
+    </section>
 </div>
