@@ -2,7 +2,7 @@
     file handles the full screen view of the post when user clicks read more link
 --}}
 @include("layouts.layout")
-<link href="{{ url('css/main.css') }}" rel="stylesheet">
+<link href="{{ secure_asset('css/main.css') }}" rel="stylesheet">
 
 <body class="background_color">
 <meta name="csrf-token" content="{{ csrf_token() }}">

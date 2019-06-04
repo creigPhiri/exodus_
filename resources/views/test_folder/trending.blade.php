@@ -1,5 +1,5 @@
 @include("layouts.layout")
-<link href="{{ url('css/main.css') }}" rel="stylesheet">
+<link href="{{ secure_asset('css/main.css') }}" rel="stylesheet">
 
 <body class="background_color">
 <div class="container-fluid" style=";height: 100%">
