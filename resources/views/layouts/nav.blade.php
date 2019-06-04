@@ -1,7 +1,7 @@
 {{--using bootstrap 4.1--}}
 @include("layouts.layout")
 
-<nav class="navbar navbar-expand-lg navbar-light border-bottom shadow-sm justify-content-center mb-3" style="border-radius: 4%;">
+<nav class="navbar navbar-expand-lg navbar-dark border-bottom shadow-sm justify-content-center mb-3" style="border-radius: 4%;">
     <a class="navbar-brand color-dd-gradient text-center " style="font-family: 'Luckiest Guy'; font-size: 26px" href="/">ZimVoice</a>
     <button class="navbar-toggler btn-dark btn-lg " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

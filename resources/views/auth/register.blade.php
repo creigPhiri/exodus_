@@ -1,17 +1,18 @@
 @include('layouts.layout')
+<link href="{{ url('css/main.css') }}" rel="stylesheet">
 
-<div class="h-100" style="background-image: url('/images/authBackground.jpg')">
-    <div class="row justify-content-center align-self-center">
-        <div class="col-md-6 col-lg-4 py-5 ">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+<div class="h-100 flex-wrap background_color">
+    <div class="pt-3 row justify-content-center ">
+        <div class="col-md-10 col-lg-6 col-10 py-5 ">
+            <div class="card base_color">
+                <div class="card-header text-white">{{ __('Register') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
                         <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+                            <label for="name" class="col-md-4 col-form-label text-md-right text-white">{{ __('Name') }}</label>
 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
@@ -25,7 +26,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                            <label for="email" class="col-md-4 col-form-label text-md-right text-white">{{ __('E-Mail Address') }}</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
@@ -39,7 +40,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+                            <label for="password" class="col-md-4 col-form-label text-md-right text-white">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
@@ -53,7 +54,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
+                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right text-white">{{ __('Confirm Password') }}</label>
 
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
@@ -62,10 +63,10 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary col-10 offset-1">
+                                <button type="submit" class="btn p-2 col-12 primary_color_bg off_white">
                                     {{ __('Register') }}
                                 </button>
-                                <a class="nav-link text-danger offset-1 col-10 mt-3 text-center font-weight-bold" href="{{ route('login') }}">Returning User ?</a>
+                                <a class="btn p-2 col-12 btn-light primary_color mt-3" href="{{ route('login') }}">Returning User ?</a>
                             </div>
                             </div>
                         </div>
