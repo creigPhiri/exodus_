@@ -3,9 +3,9 @@
             <div class="card-header" style="background-color: white; border-bottom: none">
                 <h3 class="h3 font-weight-bold" style="font-family: 'Quattrocento Sans', sans-serif; ">{{$post->post_title}}</h3>
                 <div class="row">
-                    <div class=" col-3 justify-content-center align-items-center">
+                    <div class=" col-3 col-sm-3 justify-content-center align-items-center">
                         <img src="https://http2.mlstatic.com/quadro-personalidade-nelson-mande-29x42-moldura-madeira-1102-D_NQ_NP_980480-MLB28001804510_082018-F.jpg" alt="" width="60px" height="60px" class="mb-2 rounded-circle img-responsive">
-                        <span class="text-primary d-inline ">{{'@'.$post->users->name}}</span>
+                        <span class="d-sm-block text-primary d-inline ">{{'@'.$post->users->name}}</span>
                     </div>
                     <div class=" col row">
                         <div class="col-12" >
