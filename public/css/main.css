@@ -166,6 +166,23 @@ html {
 }
 
 
-.primary_color {
+.primary_color_bg {
     background-color: #FB8122;
 }
+
+.primary_color {
+    color: #FB8122;
+}
+
+.background_color {
+    background-color: #0B0C10;
+}
+
+.base_color {
+    background-color: #1F2833
+}
+
+.off_white {
+    color: #FFFFFA
+}
+

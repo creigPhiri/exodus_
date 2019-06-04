@@ -1,10 +1,11 @@
 @include('layouts.layout')
+<link href="{{ url('css/main.css') }}" rel="stylesheet">
 
-<div class="h-100 flex-wrap" style="background-color: #0B0C10">
+<div class="h-100 flex-wrap background_color">
     <div class="pt-5 row justify-content-center ">
         <div class="col-md-10 col-lg-4 col-10 py-5 ">
-            <div class="mt-4 card p-4" style="background-color: #1F2833; border-radius: 20px">
-                <div class="card-header h4" style="color: #FFFFFA ">{{ __('Login') }}</div>
+            <div class="mt-4 card p-4 base_color" style=" border-radius: 20px">
+                <div class="card-header h4 off_white" >{{ __('Login') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
@@ -50,10 +51,10 @@
 
                         <div class="form-group row mb-0 mx-auto">
                             <div class="col-md-8 offset-md-2">
-                                <button type="submit" class="btn col-12 primary_color" style=" color: #FFFFFA">
+                                <button type="submit" class="btn col-12 primary_color_bg" style=" color: #FFFFFA">
                                     {{ __('Login') }}
                                 </button>
-                                <a class="btn btn-link" style="color: #FB8122" href="{{ route('register') }}">New User ?</a>
+                                <a class="btn btn-link primary_color" href="{{ route('register') }}">New User ?</a>
                                 {{--<a class="btn btn-link" href="{{ route('password.request') }}">--}}
                                     {{--{{ __('Forgot Your Password?') }}--}}
                                 {{--</a>--}}
