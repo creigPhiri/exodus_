@@ -1,5 +1,5 @@
 @include('layouts.layout')
-<link href="{{ url('css/main.css') }}" rel="stylesheet">
+<link href="{{ secure_asset('css/main.css') }}" rel="stylesheet">
 
 <div class="h-100 flex-wrap background_color">
     <div class="pt-5 row justify-content-center ">
