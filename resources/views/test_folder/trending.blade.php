@@ -1,5 +1,6 @@
 <html>
 <link href="{{ secure_asset('css/main.css') }}" rel="stylesheet">
+<meta name="csrf-token" content="{{ csrf_token() }}">
 
 <body class="background_color">
 @include('layouts.nav')
