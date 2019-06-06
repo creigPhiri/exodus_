@@ -15,6 +15,9 @@
       </p>
     <a class="nav-link active"> {{$post->users->name}}</a>
     </div>
+    <div>
+        @include("input_cards.comment_form")
+    </div>
     <section >
         @foreach($post->comments as $comment)
         @include("display_cards.comment_card")

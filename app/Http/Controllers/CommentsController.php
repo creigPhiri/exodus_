@@ -46,7 +46,7 @@ class CommentsController extends Controller
         $comment->post_id = request('post_id');
         $comment->comment_body = request('comment_body');
         $comment->save();
-        return redirect('index');
+        return back();
 
     }
 

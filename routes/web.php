@@ -19,9 +19,9 @@ Auth::routes();
 
 Route::get('/index', 'PostsController@index')->name('home');        //directs to home
 
-Route::post('/index','PostsController@store');                      //used to store new post
+Route::post('/makePost', "PostsController@store");                      //used to store new post
 
-//Route::post('comment','CommentsController@store');                  //used to store new comment
+Route::post('comment','CommentsController@store');                  //used to store new comment
 
 Route::get('logout','Auth\LoginController@destroy');                //destroy session (logout)
 

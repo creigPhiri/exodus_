@@ -1,11 +1,12 @@
 @include('layouts.layout')
 <link href="{{ secure_asset('css/main.css') }}" rel="stylesheet">
+<link href="{{ url('css/main.css') }}" rel="stylesheet">
 
 <div class="h-100 flex-wrap background_color">
     <div class="pt-3 row justify-content-center ">
         <div class="col-md-10 col-lg-6 col-10 py-5 ">
-            <div class="mt-4 card p-md-4 base_color" style=" border-radius: 20px">
-                <div class="card-header h4 off_white" >{{ __('Login') }}</div>
+            <div class="mt-4 card p-md-4 base_color" style=" border-radius: 20px" >
+                <div class="card-header h4 off_white"  >{{ __('ZimVoice') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">

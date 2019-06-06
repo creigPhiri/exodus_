@@ -67,7 +67,7 @@ class PostsController extends Controller
         $post->post_image = request('post_image');
         $post->save();
 
-        return redirect('/index');
+        return redirect("/");
     }
 
 
