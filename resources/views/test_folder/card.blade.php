@@ -1,7 +1,7 @@
 @include("layouts.layout")
 <link href="{{ secure_asset('css/main.css') }}" rel="stylesheet">
     <div class="container p-3 d-flex">
-        <div class="col-md-8 p-3  col-lg-6 offset-md-2 offset-lg-3" style="border-left: 2px solid #19FABF">
+        <div class="col-md-8 p-3  col-lg-6 offset-md-2 offset-lg-3" style="border-left: 1px solid #19FABF">
             <div class="row">
                 <div class="col-3">
                     <div style="width: 60px; height:60px; font-size: 30px; border-radius: 50%" class=" col mx-auto primary_color_bg off_white text-capitalize text-center mb-2">
@@ -12,7 +12,7 @@
                 <div class="p-0 col-8 row justify-content-center">
                     <div class="col-12" >
                         <div class="" style ="max-height: 100px;overflow-y: scroll" >
-                            <p class="off_white"  style="font-size: 18px; font-family: 'Quattrocento Sans'"><i class="fas fa-quote-left fa-3x primary_color"></i>{{ $post->post_body }} </p>
+                            <p class="off_white"  style="font-size: 18px; font-family: 'Quattrocento Sans'"><i class="fas fa-quote-left fa-2x primary_color ml-4"></i>{{ $post->post_body }} </p>
                         </div>
                         <div class="mt-3">
                             <span class="text-muted" style="font-size: 13px">{{$post->created_at->diffforhumans()}}</span>
