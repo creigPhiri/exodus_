@@ -7,7 +7,7 @@
         <input type="text" name="post_id" value="{{$post->id}}" class="d-none">
           <div class="form-group">
                 <input type="text" name="post_id" value="{{$post->id}}" class="d-none">
-                   <textarea name="comment_body" id="comment_body" class="" cols="20" placeholder="comment ?"></textarea>
+                   <textarea name="comment_body" id="comment_body" class="rounded" cols="20" placeholder="comment ?"></textarea>
                 <input type="submit" class="btn btn-primary form-control ml-3">
           </div>
         <div class="cardbox-comments">
