@@ -12,7 +12,7 @@
                 <div class="p-0 col-8 row justify-content-center">
                     <div class="col-12" >
                         <div class="" style ="max-height: 100px;overflow-y: scroll" >
-                            <p class="off_white"  style="font-size: 18px; font-family: 'Quattrocento Sans'"><i class="fas fa-quote-left fa-2x primary_color ml-4"></i>{{ $post->post_body }} </p>
+                            <p class="off_white"  style="font-size: 18px; font-family: 'Quattrocento Sans'"><i class="fas fa-quote-left fa-2x primary_color mr-4"></i>{{ $post->post_body }} </p>
                         </div>
                         <div class="mt-3">
                             <span class="text-muted" style="font-size: 13px">{{$post->created_at->diffforhumans()}}</span>
