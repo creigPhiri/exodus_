@@ -42,7 +42,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-md-8 offset-md-2 pb-2">
+                            <div class="col-md-8 offset-md-2">
                                 <div class="checkbox">
                                     <label class="text-white">
                                         <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> {{ __('Remember Me') }}
