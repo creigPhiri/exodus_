@@ -2,21 +2,22 @@
 <link href="{{ secure_asset('css/main.css') }}" rel="stylesheet">
 <link href="{{ url('css/main.css') }}" rel="stylesheet">
 
-<div class="h-100 flex-wrap background_color">
+<div class="h-100 background_color">
     <div class="pt-3 row justify-content-center ">
-        <div class="col-md-10 col-lg-6 col-10 py-5 ">
-            <div class="mt-4 card p-md-4 base_color" style=" border-radius: 20px" >
-                <div class="card-header h4 off_white"  >{{ __('ZimVoice') }}</div>
+
+        <div class="col-md-10 col-lg-5 col-8 py-5">
+            <div class="mt-4 p-md-4 base_color"  >
+                <div class="card-header h4 off_white" style="font-size: 2rem; font-weight: 700; ">{{ __('The Voice') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
                         <div class="form-group row">
-                            <label for="email" class="text-white col-sm-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                            {{--<label for="email" class="text-white col-sm-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>--}}
 
-                            <div class="col-md-8">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
+                            <div class="col-md-8 offset-md-2 pb-2">
+                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" placeholder="email@gmail.com" required autofocus>
 
                                 @if ($errors->has('email'))
                                     <span class="invalid-feedback">
@@ -27,10 +28,10 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right text-white">{{ __('Password') }}</label>
+                            {{--<label for="password" class="col-md-4 col-form-label text-md-right text-white">{{ __('Password') }}</label>--}}
 
-                            <div class="col-md-8">
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+                            <div class="col-md-8 offset-md-2 pb-2">
+                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" placeholder="password123" required>
 
                                 @if ($errors->has('password'))
                                     <span class="invalid-feedback">
