@@ -1,6 +1,7 @@
 @include('layouts.layout')
 {{--<link href="{{ secure_asset('css/main.css') }}" rel="stylesheet">--}}
 <link href="{{ url('css/main.css') }}" rel="stylesheet">
+<link href="{{ secure_asset('css/main.css') }}" rel="stylesheet">
 
 {{--<div class="h-100 background_color">--}}
     {{--<div class="pt-3 row justify-content-center ">--}}
