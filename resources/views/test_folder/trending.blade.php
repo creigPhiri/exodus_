@@ -4,7 +4,7 @@
 
 <body class="background_color">
 @include('layouts.nav')
-<div class="container-fluid" style=";height: 100%">
+<div class="container-fluid" style="height: 100%">
     <div class="text-center mb-5">
         <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" class="text-center h2 collapsing text-white " style="font-family: 'Indie Flower',cursive; ">Add your views <i class="fas fa-plus primary_color"></i></a>
     </div>

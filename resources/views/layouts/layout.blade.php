@@ -1,6 +1,6 @@
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
-<title>{{ config('app.name', 'Laravel') }}</title>
+<title>The Voice</title>
 
 <!-- Scripts -->
 <script src="{{ secure_asset('js/index.js') }}" defer></script>
@@ -30,3 +30,7 @@
 
 <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Quattrocento+Sans|Righteous|Luckiest+Guy" rel="stylesheet">
 
+<link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sign-in/">
+
+<!-- Bootstrap core CSS -->
+{{--<link href="{{url("css/bootstrap.min.css")}}" rel="stylesheet">--}}
