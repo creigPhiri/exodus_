@@ -1,75 +1,13 @@
-@include('layouts.layout')
+@include("layouts.layout")
 {{--<link href="{{ secure_asset('css/main.css') }}" rel="stylesheet">--}}
 <link href="{{ url('css/main.css') }}" rel="stylesheet">
 <link href="{{ secure_asset('css/main.css') }}" rel="stylesheet">
-
-{{--<div class="h-100 background_color">--}}
-    {{--<div class="pt-3 row justify-content-center ">--}}
-
-        {{--<div class="col-md-10 col-lg-5 col-8 py-5">--}}
-            {{--<div class="mt-4 p-md-4 base_color"  >--}}
-                {{--<div class="card-header h4 off_white" style="font-size: 2rem; font-weight: 700; ">{{ __('The Voice') }}</div>--}}
-
-                {{--<div class="card-body">--}}
-                    {{--<form method="POST" action="{{ route('login') }}">--}}
-                        {{--@csrf--}}
-
-                        {{--<div class="form-group row">--}}
-                            {{--<div class="col-md-8 offset-md-2 pb-2">--}}
-                                {{--<input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" placeholder="email@gmail.com" required autofocus>--}}
-
-                                {{--@if ($errors->has('email'))--}}
-                                    {{--<span class="invalid-feedback">--}}
-                                        {{--<strong>{{ $errors->first('email') }}</strong>--}}
-                                    {{--</span>--}}
-                                {{--@endif--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-
-                        {{--<div class="form-group row">--}}
-
-                            {{--<div class="col-md-8 offset-md-2 pb-2">--}}
-                                {{--<input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" placeholder="password123" required>--}}
-
-                                {{--@if ($errors->has('password'))--}}
-                                    {{--<span class="invalid-feedback">--}}
-                                        {{--<strong>{{ $errors->first('password') }}</strong>--}}
-                                    {{--</span>--}}
-                                {{--@endif--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-
-                        {{--<div class="form-group row">--}}
-                            {{--<div class="col-md-8 offset-md-2">--}}
-                                {{--<div class="checkbox">--}}
-                                    {{--<label class="text-white">--}}
-                                        {{--<input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> {{ __('Remember Me') }}--}}
-                                    {{--</label>--}}
-                                {{--</div>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-
-                        {{--<div class="form-group row mb-0 mx-auto">--}}
-                            {{--<div class="col-md-8 offset-md-2">--}}
-                                {{--<button type="submit" class="btn p-2 col-12 primary_color_bg off_white">--}}
-                                    {{--{{ __('Login') }}--}}
-                                {{--</button>--}}
-                                {{--<a class="btn p-2 col-12 btn-light primary_color mt-3" href="{{ route('register') }}">New User ?</a>--}}
-                                {{--<a class="btn btn-link" href="{{ route('password.request') }}">--}}
-                                    {{--{{ __('Forgot Your Password?') }}--}}
-                                {{--</a>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                    {{--</form>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-    {{--</div>--}}
-{{--</div>--}}
-
+<link href="{{url("css/signin.css")}}" rel="stylesheet">
+<link href="{{secure_asset("css/signin.css")}}" rel="stylesheet">
 
 
 <!DOCTYPE html>
+
 <!-- saved from url=(0051)https://getbootstrap.com/docs/4.3/examples/sign-in/ -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
@@ -94,11 +32,16 @@
                 font-size: 3.5rem;
             }
         }
+        a.btn:hover {
+            background-color: #FFFFFA;
+            color:black;
+        }
     </style>
     <!-- Custom styles for this template -->
-    <link href="{{secure_asset("css/signin.css")}}" rel="stylesheet">
+
 </head>
 <body class="text-center" cz-shortcut-listen="true"><div id="i4c-draggable-container" style="position: fixed; z-index: 1499; width: 0px; height: 0px;"><div data-reactroot="" class="resolved" style="all: initial;"></div></div>
+
     <form class="form-signin" method="POST" action="{{ route('login') }}">
         @csrf
 

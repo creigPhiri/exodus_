@@ -1,6 +1,6 @@
 {{--this is the view for the displaying the comment which will only be injected if there is a comment for the relevant post--}}
-@include("layouts.layout")
-<link href="{{ secure_asset('css/main.css') }}" rel="stylesheet">
+{{--@include("layouts.layout")--}}
+{{--<link href="{{ secure_asset('css/main.css') }}" rel="stylesheet">--}}
 
 <div class="ml-5" style="height: 100px">
     <div class="h-25">

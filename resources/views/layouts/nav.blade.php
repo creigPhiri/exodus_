@@ -1,6 +1,3 @@
-{{--using bootstrap 4.1--}}
-@include("layouts.layout")
-
 <nav class=" mb-5 navbar navbar-expand-md navbar-dark border-bottom shadow-sm justify-content-center mb-3" style="border-radius: 4%;">
     <a class="navbar-brand color-dd-gradient text-center " style="font-family: 'Luckiest Guy'; font-size: 26px" href="/">ZimVoice</a>
     <button class="navbar-toggler btn-dark btn-lg " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
