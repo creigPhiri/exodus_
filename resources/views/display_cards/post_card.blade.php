@@ -66,9 +66,7 @@ Hero
         <div class="row">
 
             <div class="col-lg offset-lg-1">
-
                 <div class="cardbox shadow-lg bg-white">
-
                     <div class="cardbox-heading">
                         <div class="media m-0">
                             <div class="d-flex row">

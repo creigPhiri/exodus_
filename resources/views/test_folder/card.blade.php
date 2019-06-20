@@ -2,7 +2,7 @@
         <div class="col-md-8 p-3  col-lg-6 offset-md-2 offset-lg-3" style="border-left: 1px solid #19FABF">
             <div class="row">
                 <div class="col-3">
-                    <div style="width: 60px; height:60px; font-size: 30px; border-radius: 50%" class=" col mx-auto primary_color_bg off_white text-capitalize text-center mb-2">
+                    <div style="width: 60px; height:60px; font-size: 30px" class=" col mx-auto primary_color_bg off_white text-capitalize text-center mb-2">
                         <p class="align-self-center pt-1">{{substr($post->users->name,0,1)}}</p>
                     </div>
                     <span class="text-center my-auto off_white ">{{'@'.$post->users->name}}</span>
