@@ -7,7 +7,7 @@
 <div class="container-fluid" style="height: 100%">
     <div class="mt-0 justify-content-center row">
 
-            <form method="post" action="/makePost" class="text-center border-0 p-4 col-7 col-lg-5 rounded" style="box-shadow: 0 10px 20px -12px rgba(0,255,255,0.25)">
+            <form method="post" action="/makePost" class="text-center border-0 p-4 col-md-9 col-lg-5 rounded" style="box-shadow: 0 10px 20px -17px rgba(226,125,96,0.6); background-color: #282828">
               {{csrf_field()}}
                 <!-- title -->
                 <input type="text" name="post_title" class="form-control mb-4" placeholder="Title">
@@ -19,7 +19,7 @@
 
 
                 <!-- Send button -->
-                <button class="btn btn-block btn-info" type="submit">Share</button>
+                <button class="btn btn-block" style="background-color: #e27d60" type="submit">Share</button>
 
             </form>
             <!-- Default form contact -->

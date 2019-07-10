@@ -198,7 +198,7 @@ html {
 
 @media (max-device-width: 500px) {
     .off_white{
-        font-size: 26px;
+        font-size: 28px;
         width:100%;
     }
 
@@ -207,10 +207,21 @@ html {
         margin-bottom: 16px;
     }
     a {
-        font-size: 26px;
+        font-size: 28px;
     }
 
     .text-muted {
         font-size: 20px;
     }
+
+    #profile_name {
+        font-size: 22px;
+
+    }
+
+    .container {
+        margin:  0;
+        padding:10px;
+    }
+
 }

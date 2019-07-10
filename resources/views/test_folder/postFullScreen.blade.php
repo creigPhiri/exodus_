@@ -4,10 +4,6 @@ file handles the full screen view of the post when user clicks read more link
 
 <style>
     @charset "UTF-8";
-    * {
-        font-family: rounded, sans-serif;
-    }
-
     html {
         background: #223;
     }
@@ -332,7 +328,7 @@ file handles the full screen view of the post when user clicks read more link
     }
     @media screen and (max-width: 700px) {
         .pxc-title {
-            font-size: 16px;
+            font-size: 28px;
             white-space: initial;
             overflow: initial;
             text-overflow: initial;
@@ -340,8 +336,8 @@ file handles the full screen view of the post when user clicks read more link
     }
 
     .pxc-sub {
-        font-size: 14px;
-        margin: 2px 0 8px 0;
+        font-size: 24px;
+        margin: 5px 0 8px 0;
         flex: 1 1 auto;
         overflow: hidden;
         -webkit-mask-image: linear-gradient(black 80%, transparent 100%);
@@ -480,22 +476,6 @@ file handles the full screen view of the post when user clicks read more link
 @section("content")
     {{--<div class="container" style=" height: 100%">--}}
         @include('layouts.nav')
-        {{--<div class="jumbotron text-white pt-2 text-center pb-0 rounded-0 shadow-none" style="background-color: #1F2030">--}}
-            {{--<img src="https://via.placeholder.com/1000x200.png?text=image+missing" class="img-fluid h-50" alt="">--}}
-            {{--<h1 class="display-5 mt-1 text-center" style="font-family: Oswald">{{$post->post_title}}</h1>--}}
-            {{--<div class="mx-auto m-3 d-block primary_color_bg" style="padding-bottom: 0.05rem; width: 20%"></div>--}}
-            {{--<p class="lead">{{$post->post_body}}</p>--}}
-            {{--<p class="font-italic">{{'by '.$post->users->name}}</p>--}}
-        {{--</div>--}}
-        {{--<div>--}}
-            {{--@include("input_cards.comment_form")--}}
-        {{--</div>--}}
-        {{--<section >--}}
-            {{--@foreach($post->comments as $comment)--}}
-            {{--@include("display_cards.comment_card")--}}
-            {{--@endforeach--}}
-        {{--</section>--}}
-
 
     <div class="plx-card gold">
         <div class="pxc-bg" style="background-image:url('https://images.freeimages.com/images/small-previews/335/vale-da-lua-2-1401161.jpg');">  </div>
