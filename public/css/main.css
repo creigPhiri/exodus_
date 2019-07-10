@@ -153,6 +153,12 @@ html {
     }
 }
 
+@include media-breakpoint-up(xs) {
+    html {
+        font-size: 2rem;
+    }
+}
+
 @include media-breakpoint-up(md) {
     html {
         font-size: 1.8rem;
@@ -190,3 +196,21 @@ html {
   box-shadow: 1px 10px 20px rgba(255,255,255,0.15);
 }
 
+@media (max-device-width: 500px) {
+    .off_white{
+        font-size: 26px;
+        width:100%;
+    }
+
+    .col-md {
+        padding: 5%;
+        margin-bottom: 16px;
+    }
+    a {
+        font-size: 26px;
+    }
+
+    .text-muted {
+        font-size: 20px;
+    }
+}

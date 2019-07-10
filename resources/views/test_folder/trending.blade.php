@@ -5,12 +5,9 @@
 @section("content")
 @include('layouts.nav')
 <div class="container-fluid" style="height: 100%">
-    {{--<div class="text-center mb-5">--}}
-        {{--<a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" class="text-center h2 collapsing text-white " style="font-family: 'Indie Flower',cursive; ">Add your views <i class="fas fa-plus primary_color"></i></a>--}}
-    {{--</div>--}}
     <div class="mt-0 justify-content-center row">
 
-            <form method="post" action="/makePost" class="text-center border bg-dark p-3 col-7">
+            <form method="post" action="/makePost" class="text-center border-0 p-4 col-7 col-lg-5 rounded" style="box-shadow: 0 10px 20px -12px rgba(0,255,255,0.25)">
               {{csrf_field()}}
                 <!-- title -->
                 <input type="text" name="post_title" class="form-control mb-4" placeholder="Title">
