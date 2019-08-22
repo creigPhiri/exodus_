@@ -1,5 +1,16 @@
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
+{{--start of ogp meta data--}}
+<meta property="og:title" content="Fortune Creig| Portfolio" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="./img/ogp_image.png" />
+<meta property="og:url" content="http://creigphiri.github.io" />
+<meta property="og:description" content="Fortune Creig | Fullstack Developer | Bridging the gap between dreams and reality. " />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+{{--end of ogp meta data--}}
+<meta name="author" content="Fortune Creig" />
 <title>The Voice</title>
 
 <!-- Scripts are commented out as they are not needed and causing errors
@@ -18,6 +29,7 @@
 <link href="{{ asset('css/main.css') }}" rel="stylesheet">
 
 <link href="{{ secure_asset('css/main.css') }}" rel="stylesheet">
+
 
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
