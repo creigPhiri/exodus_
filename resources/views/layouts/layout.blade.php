@@ -7,11 +7,11 @@
 <meta property="og:url" content="https://classique-croissant-67398.herokuapp.com/login" />
 <meta property="og:description" content="Blog like never before on the Voice. App where you are free to be you within a safe amd secure environment." />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+<meta name="author" content="Fortune Creig" />
 
 {{--end of ogp meta data--}}
-<meta name="author" content="Fortune Creig" />
 <title>The Voice</title>
+
 
 <!-- Scripts are commented out as they are not needed and causing errors
      when referencing bootstrap.js
