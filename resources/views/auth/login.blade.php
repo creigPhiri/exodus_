@@ -6,14 +6,16 @@
 <link href="{{secure_asset("css/signin.css")}}" rel="stylesheet">
 
 
-<!DOCTYPE html>
+<!DOCTYPE html >
 
 <!-- saved from url=(0051)https://getbootstrap.com/docs/4.3/examples/sign-in/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en" prefix="og:http//ogp.me/ns#">
+<head>
+    {{--<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">--}}
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="generator" content="Jekyll v3.8.5">
+    {{--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">--}}
+    {{--<meta name="description" content="">--}}
+    {{--<meta name="generator" content="Jekyll v3.8.5">--}}
     <title>Login · The Voice</title>
 
 
