@@ -3,9 +3,9 @@
 {{--start of ogp meta data--}}
 <meta property="og:title" content="Fortune Creig| Portfolio" />
 <meta property="og:type" content="website" />
-<meta property="og:image" content="./img/ogp_image.png" />
+<meta property="og:image" content="./images/ogp_image.png" />
 <meta property="og:url" content="http://creigphiri.github.io" />
-<meta property="og:description" content="Fortune Creig | Fullstack Developer | Bridging the gap between dreams and reality. " />
+<meta property="og:description" content="Blog like never before on the Voice. App where you are free to be you within a safe amd secure environment." />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 
